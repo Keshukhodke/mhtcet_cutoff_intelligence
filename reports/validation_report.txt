@@ -15,9 +15,9 @@ MASTER DATA QUALITY REPORT
 
 3. CAP Round Coverage
    cap_round
+   CAP1     97338
    CAP2    111511
    CAP3    103907
-   CAP1     97338
    CAP4     92324
 
 4. Exact Duplicate Check
@@ -68,4 +68,4 @@ MASTER DATA QUALITY REPORT
     - rank = 0 records (8 records, safe to ignore)
 
 17. ML Readiness
-    READY — Dataset is highly robust and ready for machine learning.
+    READY ï¿½ Dataset is highly robust and ready for machine learning.
