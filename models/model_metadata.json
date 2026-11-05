@@ -1,0 +1,29 @@
+{
+  "model_name": "Calibrated Blended Ensemble (RF 55% + ET 45%)",
+  "calibration_offset": 5.3,
+  "features_categorical": [
+    "college_code",
+    "branch_code_x",
+    "category"
+  ],
+  "features_numerical": [
+    "previous_cutoff",
+    "current_branch_intake",
+    "intake_change_absolute",
+    "is_expanded_branch",
+    "is_special_quota",
+    "is_female",
+    "college_avg_cutoff"
+  ],
+  "train_samples": 4254,
+  "test_samples": 27836,
+  "metrics": {
+    "MAE": 9.9163,
+    "MedAE": 5.8999,
+    "RMSE": 14.5077,
+    "R2": 0.6531,
+    "within_2_percent": 18.79,
+    "within_5_percent": 45.13,
+    "elite_colleges_within_5_percent": 93.41
+  }
+}
