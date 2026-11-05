@@ -1,0 +1,57 @@
+[
+  {
+    "code": 245,
+    "name": "Computer Engineering",
+    "group": "Computer/IT"
+  },
+  {
+    "code": 242,
+    "name": "Computer Science and Engineering",
+    "group": "Computer/IT"
+  },
+  {
+    "code": 246,
+    "name": "Information Technology",
+    "group": "Computer/IT"
+  },
+  {
+    "code": 263,
+    "name": "Artificial Intelligence and Data Science",
+    "group": "AI/DS/ML"
+  },
+  {
+    "code": 264,
+    "name": "Artificial Intelligence and Machine Learning",
+    "group": "AI/DS/ML"
+  },
+  {
+    "code": 372,
+    "name": "Electronics and Telecommunication Engg",
+    "group": "Electronics"
+  },
+  {
+    "code": 612,
+    "name": "Mechanical Engineering",
+    "group": "Core"
+  },
+  {
+    "code": 191,
+    "name": "Civil Engineering",
+    "group": "Core"
+  },
+  {
+    "code": 293,
+    "name": "Electrical Engineering",
+    "group": "Core"
+  },
+  {
+    "code": 507,
+    "name": "Chemical Engineering",
+    "group": "Chemical/Allied"
+  },
+  {
+    "code": 464,
+    "name": "Instrumentation Engineering",
+    "group": "Electronics"
+  }
+]

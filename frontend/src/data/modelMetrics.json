@@ -1,0 +1,26 @@
+{
+  "model_name": "Calibrated Blended Ensemble",
+  "architecture": "55% Random Forest (120 trees) + 45% Extra Trees (120 trees)",
+  "calibration_offset": "+5.30 Percentile (CAP4 closing to CAP1 opening shift)",
+  "training_records": 4254,
+  "testing_records": 27836,
+  "metrics": {
+    "MAE": 9.9163,
+    "MedAE": 5.8999,
+    "RMSE": 14.5077,
+    "R2": 0.6531,
+    "SMAPE": 22.15,
+    "within_1_pct": 9.23,
+    "within_2_pct": 18.79,
+    "within_5_pct": 45.13,
+    "elite_colleges_within_5_pct": 93.41,
+    "elite_colleges_medae": 2.59
+  },
+  "data_version": "MHT-CET CAP 2022-2026 Master Dataset (397,152 verified rows)",
+  "last_updated": "2026-10-22",
+  "limitations": [
+    "Special micro-quota categories (PWD, DEF, ORPHAN) contain low single-seat volume and experience higher year-over-year volatility.",
+    "CAP1 cutoffs historically open higher than later rounds (CAP2, CAP3, CAP4).",
+    "Forecasts represent probabilistic estimates based on historical seat allotment patterns and approved intake, not admission guarantees."
+  ]
+}

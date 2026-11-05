@@ -1,0 +1,140 @@
+[
+  {
+    "code": "GOPENS",
+    "name": "General Open (State Level)",
+    "type": "Open",
+    "quota": "General"
+  },
+  {
+    "code": "GOPENH",
+    "name": "General Open (Home University)",
+    "type": "Open",
+    "quota": "General"
+  },
+  {
+    "code": "GOPENO",
+    "name": "General Open (Other University)",
+    "type": "Open",
+    "quota": "General"
+  },
+  {
+    "code": "LOPENS",
+    "name": "Ladies Open (State Level)",
+    "type": "Open",
+    "quota": "Ladies"
+  },
+  {
+    "code": "LOPENH",
+    "name": "Ladies Open (Home University)",
+    "type": "Open",
+    "quota": "Ladies"
+  },
+  {
+    "code": "TFWS",
+    "name": "Tuition Fee Waiver Scheme (5% supernumerary)",
+    "type": "Waiver",
+    "quota": "General"
+  },
+  {
+    "code": "EWS",
+    "name": "Economically Weaker Section (10% reservation)",
+    "type": "EWS",
+    "quota": "General"
+  },
+  {
+    "code": "GOBCS",
+    "name": "General OBC (State Level)",
+    "type": "OBC",
+    "quota": "General"
+  },
+  {
+    "code": "GOBCH",
+    "name": "General OBC (Home University)",
+    "type": "OBC",
+    "quota": "General"
+  },
+  {
+    "code": "LOBCS",
+    "name": "Ladies OBC (State Level)",
+    "type": "OBC",
+    "quota": "Ladies"
+  },
+  {
+    "code": "GSCS",
+    "name": "General Scheduled Caste (State Level)",
+    "type": "SC",
+    "quota": "General"
+  },
+  {
+    "code": "GSCH",
+    "name": "General Scheduled Caste (Home University)",
+    "type": "SC",
+    "quota": "General"
+  },
+  {
+    "code": "LSCS",
+    "name": "Ladies Scheduled Caste",
+    "type": "SC",
+    "quota": "Ladies"
+  },
+  {
+    "code": "GSTS",
+    "name": "General Scheduled Tribe (State Level)",
+    "type": "ST",
+    "quota": "General"
+  },
+  {
+    "code": "GSTH",
+    "name": "General Scheduled Tribe (Home University)",
+    "type": "ST",
+    "quota": "General"
+  },
+  {
+    "code": "GVJS",
+    "name": "General VJ / DT (NT-A)",
+    "type": "VJ/NT",
+    "quota": "General"
+  },
+  {
+    "code": "GNT1S",
+    "name": "General NT-B (NT-1)",
+    "type": "VJ/NT",
+    "quota": "General"
+  },
+  {
+    "code": "GNT2S",
+    "name": "General NT-C (NT-2 / Dhangar)",
+    "type": "VJ/NT",
+    "quota": "General"
+  },
+  {
+    "code": "GNT3S",
+    "name": "General NT-D (NT-3 / Vanjari)",
+    "type": "VJ/NT",
+    "quota": "General"
+  },
+  {
+    "code": "GSEBCS",
+    "name": "General SEBC",
+    "type": "SEBC",
+    "quota": "General"
+  },
+  {
+    "code": "AI",
+    "name": "All India Merit (JEE Main / MHT CET)",
+    "type": "All India",
+    "quota": "General"
+  },
+  {
+    "code": "PWDOPENS",
+    "name": "Persons with Disabilities (Open)",
+    "type": "Special",
+    "quota": "PWD"
+  },
+  {
+    "code": "DEFOPENS",
+    "name": "Defense Personnel Children (Open)",
+    "type": "Special",
+    "quota": "Defense"
+  }
+]
