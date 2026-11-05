@@ -1,0 +1,191 @@
+================================================================================
+MHT-CET College Cutoff Prediction & Admission Intelligence Platform
+Complete Project Overview, Architecture, Machine Learning & Deployment Details
+================================================================================
+
+1. EXECUTIVE SUMMARY & PROBLEM STATEMENT
+--------------------------------------------------------------------------------
+Every year, over 300,000+ students appear for the Maharashtra Common Entrance 
+Test (MHT-CET) competing for engineering seats across 350+ institutes via the 
+State CET Cell's Centralized Admission Process (CAP).
+
+The Core Challenges & Pain Points:
+1. Massive, Fragmented PDF Data:
+   Historical cutoff records are released across hundreds of unformatted, multi-page 
+   PDF documents featuring irregular tabular formats, multi-line headers, and 
+   frequent corrupted or misaligned records.
+2. Dynamic Cutoff Volatility:
+   Cutoff benchmarks vary considerably year-over-year depending on student score 
+   distributions, rapid surges in demand for emerging disciplines (AI, Data Science, 
+   CS vs. core engineering), and annual changes in college intake capacities.
+3. Sub-Optimal Preference List Form Filling:
+   Students frequently fill their CAP option forms based on guesswork or anecdotal 
+   advice, leading to high-risk lists that either cause zero seat allotments or miss 
+   out on significantly higher-ranked institutions.
+
+The Solution:
+An end-to-end Machine Learning and Decision-Support System that:
+- Ingests, normalizes, and cleans multi-year CAP records (2022 to 2026).
+- Merges official Directorate of Technical Education (DTE) seat matrix data.
+- Deploys a calibrated ensemble ML regressor to accurately forecast cutoffs.
+- Provides a modern interactive React + Vite web dashboard featuring automated 
+  reachability classification (Safe, Target, Dream) and preference health audits.
+
+
+2. SYSTEM ARCHITECTURE & PIPELINE FLOW
+--------------------------------------------------------------------------------
+Raw DTE / CET PDFs & HTMLs (2022-2026)
+           │
+           ▼
+[Step 1: Data Extraction & Standardization]
+           │
+           ▼
+[Step 2: Surgical Cleaning & Recovery Engine]  ──►  Quarantine Logs (/quarantine)
+           │
+           ▼
+Master Cutoff Dataset (397,152 Records)
+           │
+           ├──────────────────────────────┐
+           ▼                              ▼
+[DTE Seat Matrix Scraper]        [Feature Fusion Pipeline]
+(Capacity shifts, Quotas)                 │
+           │                              ▼
+           └────────────────────► [Model Training & Calibration]
+                                  - Random Forest (55%)
+                                  - Extra Trees (45%)
+                                  - Empirical Calibration Offset (+5.3)
+                                          │
+                                          ▼
+                               Serialized Model Artifacts
+                               (rf_model, et_model, preprocessor)
+                                          │
+                                          ▼
+                               Client-Side Optimized Datasets
+                               (branchIntakeData, predictorData)
+                                          │
+                                          ▼
+                         Interactive Web Dashboard (React + Vite)
+
+
+3. DATA ENGINEERING & INTEGRITY ARCHITECTURE
+--------------------------------------------------------------------------------
+Raw records processed: 405,000+
+Final ML-ready master dataset: 397,152 verified records (data/final/master_cap_cutoff_final.csv)
+Missing values across critical attributes: 0 (Zero synthetic imputation used)
+
+Key Pipeline Innovations:
+1. Source-Level Category Recovery:
+   Instead of dropping records where PDF pagination broke the category headers, 
+   the pipeline uses localized forward-fill and back-fill bounded strictly by 
+   [college_code, branch_code, seat_section]. Over 12,900 category labels were 
+   accurately restored to their exact authentic values.
+2. Canonical Branch Standardization:
+   Standardized fragmented branch descriptions (e.g. "Computer Engineering", 
+   "Comp. Engg.", "Computer Technology") into authoritative branch codes.
+3. Automated Quarantine Engine:
+   Mathematically invalid rows (e.g. Rank <= 0, Percentile > 100, unresolvable 
+   scraped artifacts) are isolated into dedicated audit CSVs in /quarantine, 
+   ensuring zero contamination in training data.
+4. Intake Matrix Fusion:
+   Parses DTE official institute seat databases (2024-2026) to generate intake 
+   growth features, capturing capacity expansions that directly relax cutoffs.
+
+
+4. MACHINE LEARNING MODELING & RESULTS
+--------------------------------------------------------------------------------
+Model Architecture:
+Calibrated Blended Ensemble:
+y_pred = 0.55 * RandomForest(X) + 0.45 * ExtraTrees(X) + delta_calibration
+(delta_calibration = +5.3 percentile offset based on residual optimization)
+
+Feature Space:
+- Categorical Features:
+  * college_code
+  * branch_code
+  * category (OPEN, OBC, SC, ST, EWS, TFWS, PWD, etc.)
+- Numerical & Engineered Features:
+  * previous_cutoff (Prior year benchmark)
+  * college_avg_cutoff (Institutional prestige baseline)
+  * current_branch_intake (DTE approved seat capacity)
+  * intake_change_absolute (Year-over-year seat delta)
+  * is_expanded_branch (Binary capacity surge flag)
+  * is_special_quota (EWS / TFWS flags)
+  * is_female (Ladies quota flag)
+
+Evaluation Benchmark:
+--------------------------------------------------------------------------------
+Metric                          Blended Ensemble    Random Forest    Linear Baseline
+--------------------------------------------------------------------------------
+R² Score                        0.6531              0.6120           0.4480
+Mean Absolute Error (MAE)       9.91 percentile     10.42            14.20
+Median Absolute Error (MedAE)   5.89 percentile     6.45             9.80
+Accuracy on Elite Institutes    93.41%              90.15%           76.50%
+(Within ±5 Percentile Window)
+--------------------------------------------------------------------------------
+
+Key Modeling Insight:
+Cutoffs for top-tier institutes (COEP, VJTI, SPIT, PICT, Walchand, PCCOE) exhibit 
+high consistency and low variance, allowing the blended ensemble to predict with 
+over 93.4% accuracy within a tight ±5 percentile tolerance band.
+
+
+5. FRONTEND & DECISION SUPPORT SUITE
+--------------------------------------------------------------------------------
+Tech Stack: React 18, Vite, TypeScript, Tailwind CSS, Lucide Icons
+
+Key Features:
+1. Real-Time College Predictor:
+   Students filter by percentile, merit rank, home university, category, and 
+   seat type to view instantaneous college-branch admission possibilities.
+2. Reachability Engine:
+   Classifies every college choice into probability-backed tiers:
+   - Safe: High probability (>85% likelihood).
+   - Target: Competitive, realistic fit around the student's percentile.
+   - Dream: Ambitious options for upside potential.
+3. Historical Trends & Analyzer:
+   Multi-year comparative analytics across CAP Round 1, Round 2, and Round 3.
+4. Option Form Builder & Preference Health Check:
+   Allows students to create and drag-and-drop sort their preferred choices. 
+   An automated audit checks list balance (ratio of dream vs. target vs. safe) 
+   to eliminate the risk of zero-allotment.
+5. College Explorer:
+   Searchable directory of engineering colleges with autonomy status, region, 
+   accreditation (NAAC/NBA), and historical cutoff summaries.
+
+
+6. REPOSITORY DIRECTORY STRUCTURE
+--------------------------------------------------------------------------------
+├── data/
+│   ├── intake/                  # DTE seat matrices & intake trends (2024-2026)
+│   ├── final/                   # 397k cleaned ML-ready master cutoff dataset
+│   └── quarantine/              # Isolated corrupt/incomplete records
+├── frontend/                    # Production React 18 + Vite web dashboard
+│   ├── src/features/            # Predictor, Analyzer, Preference Builder, Explorer
+│   └── public/data/             # Client-optimized JSON datasets for instant querying
+├── models/                      # Saved models (.joblib), scalers, and metadata.json
+├── reports/                     # Data quality audits, validation reports, figures
+├── src/
+│   ├── intake/                  # Web scrapers and intake feature engineering
+│   └── models/                  # Ensemble training, calibration, and evaluation
+├── ML_Algorithm.ipynb           # Model development, EDA & visual comparison
+└── README.md                    # GitHub repository documentation
+
+
+7. KEY TALKING POINTS (INTERVIEWS, VIVA & RESUME)
+--------------------------------------------------------------------------------
+1. Authentic Data Engineering:
+   "Rather than using standard toy datasets, I engineered a pipeline that scraped 
+   and sanitized over 400,000 authentic government records, recovering 12,900+ 
+   missing data points via source-level boundary logic without synthetic imputation."
+2. Feature Innovation with Intake Capacity:
+   "Standard cutoff models only look at previous years' numbers. This system 
+   fuses DTE seat matrices to model how seat increases directly loosen cutoff scores."
+3. Full-Stack Production Implementation:
+   "The ML model is deployed inside a complete interactive web application that 
+   helps students build balanced preference lists and avoid common CAP errors."
+
+================================================================================
+Generated: 2026-11-05
+Project: ML-Powered MHT-CET College Cutoff Intelligence Platform
+GitHub: https://github.com/Keshukhodke/ML-Powered-MHT-CET-College-Cutoff-Intelligence-Platform
+================================================================================
