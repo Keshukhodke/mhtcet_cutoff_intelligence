@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" crossorigin="anonymous" /><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs; removed 4.5.0-specific SRI hash to avoid mismatch -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Images/NEWDTE.ico" type="image/x-icon" />
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/FuncLib.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ExpanderMenu.js" type="text/javascript"></script>
+
+ 
+    
+    <link href="../SBAdmin/dist/css/styles.css" rel="stylesheet" /><link href="../sbadmin/dist/css/dashboard.css" rel="stylesheet" /><link href="../sbadmin/dist/css/expandermenu.css" rel="stylesheet" /><link href="../sbadmin/dist/css/grid.css" rel="stylesheet" /><link href="../sbadmin/dist/css/innerstyle.css" rel="stylesheet" /><link href="../sbadmin/dist/css/interface.css" rel="stylesheet" /><link href="../sbadmin/dist/css/login.css" rel="stylesheet" /><link href="../sbadmin/dist/css/stepsform.css" rel="stylesheet" /><link href="../SBAdmin/dist/css/GIGW.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" /><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+
+   
+     
+    <script type="text/javascript">
+        var f_size = 12;
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('MenuLink_9805').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_2441').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7635').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7640').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7641').childNodes[0].setAttribute('target', '_blank');
+
+            //document.getElementById('MenuLink_9730').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9731').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9732').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7638').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7712').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7713').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7658').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4511').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4512').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4516').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4513').childNodes[0].setAttribute('target', '_blank');
+        }
+    </script> 
+
+<link href="../App_Themes/default/dashboard.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/ExpanderMenu.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/grid.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/InnerStyle.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/interface.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/stepsForm.css" type="text/css" rel="stylesheet" /><title>
+	..:: State Common Entrance Test Cell, Government of Maharashtra ::..
+</title></head>
+<body class="">
+    <form method="post" action="./frmInstituteSummary?InstituteCode=04123" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMIVK_aqZpr-zghEcEbZiT1AyIsIspkYyLVc0l0LeOF4pBOWndimhHHy8Ria-mY4JQ2&amp;t=639190941605538696" type="text/javascript"></script>
+
+
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C0A976CA" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainScriptManager', 'form1', ['tctl00$upShowMsg','upShowMsg'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <nav class="navbar navbar-top sticky-top navbar-expand-lg p-0 " style="display:none" >
+            <div class="row mx-auto w-100">
+                <div class="col-sm-12">
+                    <div class="container-fluid px-0 top-nav-height">
+                        <ul class="list-code px-0">
+                            <li class="nav-item border-left desktop-view">
+                                <a class="nav-link" href="#topdiv">Skip to main content</a>
+                            </li>
+                        </ul>
+                        <ul class="list-code px-0 ml-auto">
+                            <li class="nav-item border-left" title="Screen Reader Access">
+                                <a class="nav-link" href="../Gigw/frmScreenreader.aspx">
+                                    <em class="fa fa-volume-up"></em>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown social" title="Accessiblility Dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <em class="fas fa-font"></em>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                                    <a class="dropdown-item" href="#" title="Decrease font size" id="zoom-out">A-</a>
+                                    <a class="dropdown-item" href="#" title="Reset font size" id="zoom">A</a>
+                                    <a class="dropdown-item" href="#" title="Increase font size" id="zoom-in">A+</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" title="Contrast">
+                                <a class="nav-link" href="#" id="contrast1"><em class="fa fa-adjust"></em></a>
+                                <a class="nav-link" href="#" id="contrast2" style="display: none;"><em class="fa fa-adjust fa-flip-horizontal"></em></a>
+                            </li>
+                         
+                            <li class="nav-item" title="Sitemap">
+                                <a class="nav-link" href="../Gigw/frmSitemap.aspx"><em class="fas fa-sitemap"></em></a>
+                            </li>
+                                                      
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       
+          <nav class="sb-topnav navbar sticky-top navbar-expand navbar-dark bg-white py-md-1 py-0">
+            <div class="container-fluid">
+                <div class="row w-100 mx-auto">
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="d-flex">
+                                <div class=" pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img alt="Logo" src="../Images/satyamevjayte.png" class="logo-satyamevjayte img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3 pl-3">
+                                        <img alt="Logo" src="../Images/WebsiteLogo.png" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="text-left headname">
+                                    <div class="text-first pt-2">GOVERNMENT OF MAHARASHTRA </div>
+                                    <div class="text-second">State Common Entrance Test Cell</div>
+                                   <p><span>First Year Under Graduate Technical Courses in Engineering and Technology (4 Years) &<br /> Master of Engineering and Technology (Integrated 5 Years) Admissions A.Y. 2026-27</span></p>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                       <img src="../Images/ARAFINAL.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img src="../Images/SealofMaharashtra.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-auto d-flex align-items-center">
+                                <div class="d-none d-sm-inline-block pr-3" style="width: 350px;">
+                                    
+<div class=" d-inline mb-responsive-help" style="font-size: 14px; color: #0e3f8a; font-family: Verdana; line-height: 23px;">
+    Technical Helpline Number
+    <br />
+    (10:00 AM to 06:00 PM)
+                        <br />
+    <img src="../Images/baseline_call_black_18dp.png" style="width: 17px; vertical-align: middle;" />
+    +91-9175108612, 18002098851
+                            <br />
+     
+    
+    
+   
+</div>
+
+                                </div>
+                                <div class="float-right d-sm-inline d-lg-none toggle-btn">
+                                    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-menu">
+                        <div class="sb-sidenav-menu">
+                            <div class="nav">
+                                <div id="left1" class="left-area">
+                                    <div id="LeftMenu" class="ExpanderMenu">
+	<div class="Style1"   id="MenuGroup_84"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G84">Login Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_1" class="FirstLink"><a href="../StaticPages/HomePage?did=475"><lang key="D475">Home</lang></a></div><div id="MenuLink_9837" class="Link"><a href="https://maha-ara.org/"><lang key="D82566">ARA Home</lang></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_15"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G15">Important Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9875" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_ACAP.pdf"><lang key="D82606">Vacant Seats after CAP IV (ACAP)</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div><div id="MenuLink_1342" class="Link"><a href="../StaticPages/frmInstituteWiseAllotmentList.aspx?did=2021"><lang key="D2021">Institute Wise Allotment List</lang></a></div><div id="MenuLink_1104" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound4.aspx?did=82550"><lang key="D82550">Check Provisional Allotment Status (CAP Round-IV)</lang></a></div><div id="MenuLink_9873" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_AI_CutOff.pdf"><lang key="D82604">CAP Round IV AI Cut Off</lang></a></div><div id="MenuLink_9872" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf"><lang key="D82603">CAP Round IV MH Cut Off</lang></a></div><div id="MenuLink_9874" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_Diploma_CutOff.pdf"><lang key="D82605">Diploma Cut off CAP Round IV</lang></a></div><div id="MenuLink_9870" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP4.pdf"><lang key="D82601">Provisional Vacancy Position for CAP Round-IV </lang></a></div><div id="MenuLink_9869" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf"><lang key="D82600">CAP Round III MH Cut Off </lang></a></div><div id="MenuLink_9868" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_AI_CutOff.pdf"><lang key="D82599">CAP Round III AI Cut Off</lang></a></div><div id="MenuLink_1062" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound3.aspx?did=1948"><lang key="D1948">Check Provisional Allotment Status (CAP Round-III)</lang></a></div><div id="MenuLink_9866" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3.pdf"><lang key="D82597">Provisional Vacancy Position for CAP Round-III</lang></a></div><div id="MenuLink_9867" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3_NewInstitute_CourtOder.pdf"><lang key="D82598">Provisional Vacancy Position for New Institute as per Court Order in CAP Round-III</lang></a></div><div id="MenuLink_817" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound2.aspx?did=1292"><lang key="D1292">Check Provisional Allotment Status (CAP Round-II)</lang></a></div><div id="MenuLink_9858" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP2.pdf"><lang key="D82589">Provisional Vacancy Position for CAP Round-II</lang></a></div><div id="MenuLink_9862" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_AI_CutOff.pdf"><lang key="D82593">CAP Round II AI Cut Off</lang></a></div><div id="MenuLink_9863" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf"><lang key="D82594">CAP Round II MH Cut Off</lang></a></div><div id="MenuLink_794" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound1.aspx?did=1250"><lang key="D1250">Check Provisional Allotment Status (CAP Round-I)</lang></a></div><div id="MenuLink_9857" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf"><lang key="D82588">CAP Round I MH CutOff</lang></a></div><div id="MenuLink_9856" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_AI_CutOff.pdf"><lang key="D82587">CAP Round I AI Cutoff</lang></a></div><div id="MenuLink_9852" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf"><lang key="D82583">Institute-wise Category-wise Seats (Seat Matrix) for CAP Round-I</lang></a></div><div id="MenuLink_739" class="Link"><a href="../StaticPages/frmCheckFinalMeritStatus.aspx?did=1168&Flag="""><lang key="D1168">Check Final Merit List Status </lang></a></div><div id="MenuLink_737" class="Link"><a href="../StaticPages/frmCheckProvisionalMeritStatus.aspx?did=1166&Flag="""><lang key="D1166">Check Provisional Merit List Status</lang></a></div><div id="MenuLink_1222" class="Link"><a href="../StaticPages/frmInstituteList.aspx?did=1884"><lang key="D1884">List of the Colleges with Intake Capacity</lang></a></div><div id="MenuLink_7647" class="Link"><a href="../StaticPages/frmInstituteList_BATU.aspx?did=62354"><lang key="D62354">List of Institutes Affiliated to Dr. BATU, Lonere</lang></a></div><div id="MenuLink_7641" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/44.pdf?did=62341"><lang key="D62341">Registration Manual (Eng)</lang></a></div><div id="MenuLink_7640" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/45.pdf?did=62340"><lang key="D62340">Registration Manual (Mar)</lang></a></div><div id="MenuLink_9853" class="Link"><a href="https://youtu.be/pnFkeS4Gw3s"><lang key="D82584">UM-Option Form Video</lang></a></div><div id="MenuLink_655" class="Link"><a href="../StaticPages/frmApplicationFacilitationCenters.aspx?did=1038"><lang key="D1038">Scrutiny Center List</lang></a></div><div id="MenuLink_9855" class="Link"><a href="https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report"><lang key="D82586">Fee Approved by Fees Regulating Authority, Maharashtra for Academic Year 2026-27</lang></a></div><div id="MenuLink_9865" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_OffCampus_Institutes.pdf"><lang key="D82596">List of Off-Campus Institutes </lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_245"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G245">Rules and Brochure </lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9805" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/PublicPages/Information_Brochure_UG_PG_2026_27_dt_2_7_2026_DHG_1_Display.pdf"><lang key="D82533">Information Brochure for Academic Year 2026-27</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div>
+</div><script language="javascript" type="text/javascript">Synthesys.ExpanderMenu.RegisterMenu('LeftMenu', []);Synthesys.ExpanderMenu.ProjectName='FE2026';Synthesys.ExpanderMenu.SlideDelay=5;Synthesys.ExpanderMenu.SlidePixel=5;Synthesys.ExpanderMenu.DoFading=false;</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div id="topdiv" class="menu-midbg">
+                        <div id="menu">
+                            <div id="top-menu-index">
+                                <div id="TopMenu" class="TopMenu">
+	<div id="horizontal-menu"><ul><li><a href="../StaticPages/HomePage.aspx?tms=27" id="TopMenuLink_27" leftmenus="15,84,245,255,"><lang key="T27">Home</lang></a></li><li><a href="../StaticPages/frmImportantDates.aspx?tms=33" id="TopMenuLink_33" leftmenus=""><lang key="T33">Important Dates</lang></a></li><li><a href="../StaticPages/frmNotifications.aspx?tms=61" id="TopMenuLink_61" leftmenus=""><lang key="T61">Notifications</lang></a></li><li><a href="../StaticPages/frmNews.aspx?tms=67" id="TopMenuLink_67" leftmenus=""><lang key="T67">News</lang></a></li><li><a href="../StaticPages/frmDownloads.aspx?tms=62" id="TopMenuLink_62" leftmenus=""><lang key="T62">Downloads</lang></a></li><li><a href="../StaticPages/frmContactUs.aspx?tms=63" id="TopMenuLink_63" leftmenus=""><lang key="T63">Contact Us</lang></a></li></ul></div>
+</div><script language="javascript" type="text/javascript">Synthesys.TopMenu.RegisterMenu('TopMenu');Synthesys.TopMenu.TopMenuFirstLinkId=27;Synthesys.TopMenu.SetSelected('27');</script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div id="rightContainer1" class="inner_rightarea">
+                        <span id="upShowMsg">
+                                <span id="ShowMsg" class="ShowMessage"></span>
+                            </span>
+                        
+    <div id="rightContainer_ContentBox1" class="ContentBox">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Institute Summary</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv">
+			
+        <table class="AppFormTable">
+            <tr>
+                <td align="right">Institute Code</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteCode" style="font-weight:bold;">04123</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Name</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteName" style="font-weight:bold;">Lokmanya Tilak Jankalyan Shikshan Sanstha, Priyadarshani College of Engineering, Nagpur </span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Address</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteAddress" style="font-weight:bold;">Near CRPF Campus, Hingna Road, Nagpur </span></td>
+            </tr>
+            <tr>
+                <td align="right">Region</td>
+                <td><span id="rightContainer_ContentBox1_lblRegion" style="font-weight:bold;">Nagpur</span></td>
+                <td align="right">District</td>
+                <td><span id="rightContainer_ContentBox1_lblDistrict" style="font-weight:bold;">Nagpur</span></td>
+            </tr>
+            <tr>
+                <td style ="width:25%" align="right">Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus1" style="font-weight:bold;">Un-Aided</span></td>
+                <td style ="width:25%" align="right">Autonomy Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus2" style="font-weight:bold;">Autonomous</span></td>
+            </tr>
+            <tr>
+                <td align="right">Minority Status</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblStatus3" style="font-weight:bold;">Linguistic Minority - Hindi</span></td>
+            </tr>
+            <tr>
+                <td align="right">Public Remark</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblPublicRemark" style="font-weight:bold;"></span></td>
+            </tr>
+        </table>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script type="text/javascript" language="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js"></script><script language="javascript" type="text/javascript">var rightContainer_ContentBox1= document.getElementById('rightContainer_ContentBox1');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox1,false,false,false,false);</script>
+    <div id="rightContainer_ContentBox7" class="ContentBox" style="width:100%;">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Course Details</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv" style="overflow:auto;">
+			
+        <div>
+				<table class="DataGrid" cellspacing="0" cellpadding="5" rules="all" border="1" id="rightContainer_ContentBox7_gvChoiceCodeList" style="width:100%;border-collapse:collapse;">
+					<tr>
+						<th class="Header" align="center" scope="col" style="white-space:nowrap;">Choice Code</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Course Name</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">University</th><th class="Header" align="center" scope="col">Status</th><th class="Header" align="center" scope="col">Autonomy Status</th><th class="Header" align="center" scope="col">Minority Status</th><th class="Header" align="center" scope="col">Shift</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Accreditation</th><th class="Header" align="center" scope="col">Gender</th><th class="Header" align="center" scope="col">Total Intake</th>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412300210</td><td class="Item" align="center" style="white-space:nowrap;">Aeronautical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412300211T</td><td class="Item" align="center" style="white-space:nowrap;">Aeronautical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412308210</td><td class="Item" align="center" style="white-space:nowrap;">Bio Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412308211T</td><td class="Item" align="center" style="white-space:nowrap;">Bio Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412319110</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412319111T</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412324210</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412324211T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412324610</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412324611T</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412325110</td><td class="Item" align="center" style="white-space:nowrap;">Computer Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412325111T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Technology</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412326510</td><td class="Item" align="center" style="white-space:nowrap;">Industrial IoT</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412326511T</td><td class="Item" align="center" style="white-space:nowrap;">Industrial IoT</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412326610</td><td class="Item" align="center" style="white-space:nowrap;">Robotics and Artificial Intelligence</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412326611T</td><td class="Item" align="center" style="white-space:nowrap;">Robotics and Artificial Intelligence</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412329310</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412329311T</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412337010</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Communication Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412337011T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Communication Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412337210</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412337211T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412350710</td><td class="Item" align="center" style="white-space:nowrap;">Chemical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412350711T</td><td class="Item" align="center" style="white-space:nowrap;">Chemical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412361210</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412361211T</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412399510</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence and Data Science</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0412399511T</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence and Data Science</td><td class="Item" align="center" style="white-space:nowrap;">Rashtrasant Tukadoji Maharaj Nagpur University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr>
+				</table>
+			</div>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script language="javascript" type="text/javascript">var rightContainer_ContentBox7= document.getElementById('rightContainer_ContentBox7');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox7,false,false,false,false);</script>
+
+                    </div>
+                </main>
+               
+                
+                
+<div id="footer1" class="bottombg">
+    <div class="bottom-link">
+      
+        
+        <font size="4" class="footer-head pb-3">Office Address</font>
+
+        <br />
+       <br />
+        <font size="3" class="footer-text p-3">8th Floor, New Excelsior Building, A.K.Nayak Marg, Fort, Mumbai-400001. (M.S.)</font>
+    
+        
+    </div>
+      <div class="p-3" style="border-top:1px solid grey ">
+        <div class="site-info">
+            <p style="font-size: 12px;color:grey">Copyright © State CET Cell,Maharashtra State, Mumbai. All rights reserved.(W2), 2026.</p>
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs -->
+    <script src="../SBAdmin/dist/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    
+    
+    
+
+    
+    <script>
+
+        // JavaScript source code
+        if (typeof (localStorage) == 'undefined') {
+            alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+        } else {
+            if (localStorage.getItem("background") != null) {
+                $("#contrast1").hide();
+                $("#contrast2").show();
+                getColour = localStorage.background;
+                $('body').css('background', getColour);
+                $('div,footer,nav,a,.ul-title,td,.InputButton,.Header,.panel-head').css('background', getColour);
+                $('p,span,a,td,div,footer,.InputButton,.Header,.panel-head,.firstLine').css('color', 'yellow');
+                $('.info-section,.info-section div,a.carousel-caption').css('background', '');
+                $('.info-section, .info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+                $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+                $('.ttl').css('border', '1px solid red');
+                $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+            }
+            else {
+                $("#contrast2").hide();
+                $("#contrast1").show();
+            }
+        }
+
+
+        $("#contrast1").click(function () {
+            location.reload();
+            setColour = "black";
+
+
+            /*to more test color can change and retest*/
+            if (setColour == "") {
+                alert('You never entered anything silly!');
+                return;
+            }
+            localStorage.setItem("background", setColour);
+            localStorage.setItem("color", settextColor);
+            getColour = localStorage.background;
+
+            $('body').css('background', getColour);
+            $('div,footer,nav,a,.ul-title,td').css('background', getColour);
+            $('p,span,a,td,div,footer,.fa').css('color', 'yellow');
+            $('.info-section,.info-section div,a,.carousel-caption').css('background', '');
+            $('.info-section,.info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+            $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+
+            $('.ttl').css('border', '1px solid red');
+            $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+        });
+        $(document).ready(function () {
+            $("#contrast2").click(function () {
+                location.reload();
+                localStorage.removeItem('background');
+            });
+        });
+
+
+        $('.hide').hide();
+        $('#hidebutton').hide();
+        $('#showbutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').hide();
+            $('#hidebutton').show();
+        });
+
+        $('#hidebutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').show();
+            $('#hidebutton').hide();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('open');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('open');
+            });
+
+        $('.right-panel #sidebar').hide();
+        $(document).ready(function () {
+            $('.right-panel #sidebar').hide();
+            $('#sidebarCollapse').on('click', function () {
+                $('.right-panel #sidebar').toggle();
+
+            });
+
+        });
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        var isPresent = document.getElementById('photo-gallery');
+        if (isPresent > 0) {
+            showSlides(slideIndex);
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+        $(document).ready(function () {
+            var allElement = $('h1,h2,h3,h4,h5,h6,p,a,span, .table td, .table th, li, i, em');
+            console.log(allElement);
+            let originalArray = [];
+
+            for (var i = 0; i < allElement.length; i++) {
+                var originalSize = $(allElement[i]).css('font-size');
+                originalArray.push(originalSize);
+            }
+
+
+            var localArray = localStorage.getItem('fonts');
+            if (localStorage.getItem("fonts") != null) {
+
+                var floatArray = [];
+                let pasreValue;
+
+                pasreValue = JSON.parse(localArray);
+                var floatValue;
+                for (var x = 0; x < pasreValue.length; x++) {
+                    floatValue = parseFloat(pasreValue[x]);
+
+                    floatArray.push(floatValue);
+
+                }
+                console.log(floatArray);
+
+                for (var i = 0; i < allElement.length; i++) {
+                    $(allElement[i]).css('font-size', floatArray[i] + 'px');
+
+                }
+
+            }
+
+            // Increase Font Size  
+
+            var count = 0;
+
+            $("#zoom-in").one('click', function () {
+                count = localStorage.getItem('count');
+
+                if (count <= 0) {
+
+                    count++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) + 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+
+
+                        ////alert(parseFloat(originalSize) + 2);
+                        //console.log($(allElement[i]));
+                        //console.log($(allElement[i]) + " /" +originalSize + " /" + increaseSize);
+
+
+                    }
+
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count', count);
+                }
+            });
+
+            // Decrease Font Size 
+
+
+            let namesArr = [];
+            var count1 = 0;
+            $("#zoom-out").one('click', function () {
+                count1 = localStorage.getItem('count1');
+
+                if (count1 <= 0) {
+                    count1++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) - 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+                    }
+                    //console.log(namesArr);
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count1', count1);
+                }
+            });
+
+            // reset Font Size
+
+
+            $("#zoom").one('click', function () {
+                location.reload();
+                localStorage.removeItem('fonts');
+                localStorage.removeItem('count');
+                localStorage.removeItem('count1');
+            });
+
+
+        });
+
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+
+        $('.v-playmarquee').hide();
+        $('.h-playmarquee').hide();
+
+        function calcSpeed() {
+            var liTime = 5;
+
+            var spanSelector = document.querySelectorAll('.marquee');
+            for (var i = 0; i < spanSelector.length; i++) {
+                var marqueeDiv = spanSelector[i];
+
+                marqueeUL = marqueeDiv.children[0];
+
+                marqueeElemts = marqueeUL.childElementCount;
+                //console.log(marqueeElemts);
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    marqueeULHeight = marqueeUL.offsetHeight;
+                    //console.log(marqueeULHeight);
+                    liTime = 4;
+                    var vPlay = document.querySelectorAll('.v-playmarquee');
+
+                    var vPause = document.querySelectorAll('.v-pausemarquee');
+                    vPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "inline-block";
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "paused";
+                        });
+                    });
+                    vPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "inline-block";;
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "running";
+                        });
+                    });
+                }
+
+                else if (marqueeUL.classList.contains('marquee-horizontal')) {
+                    marqueeULWidth = marqueeUL.scrollWidth;
+                    console.log(marqueeULWidth);
+                    liTime = 8;
+                    var hPlay = document.querySelectorAll('.h-playmarquee');
+                    var hPause = document.querySelectorAll('.h-pausemarquee');
+                    hPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "paused";
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "block";
+
+                        });
+                    });
+                    hPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "running";
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "block";
+
+                        });
+                    });
+                }
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    var spanTime = marqueeULHeight / 16;
+                }
+                else {
+                    spanTime = marqueeULWidth / 22;
+                    console.log(marqueeULWidth);
+                    console.log(spanTime);
+                }
+
+                //console.log(spanTime);
+                marqueeUL.style.animationDuration = spanTime + "s";
+            }
+        }
+        calcSpeed();
+
+        $('.marquee a').click(function () {
+            window.location.reload();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('show');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('show');
+            });
+
+        //window.onload = function () {
+        //    (function () {
+        //        var viewportWidth = $(window).width();
+        //        if (viewportWidth < 800) {
+
+        //            var dropdownBtn = document.querySelectorAll('.dropdown-toggle');
+        //            //console.log(dropdownBtn);
+        //            dropdownBtn.forEach(function (btn) {
+        //                btn.addEventListener('click', function (event) {
+        //                    var dropMenu = event.target.nextSibling.nextSibling;
+        //                    if (dropMenu.classList.contains('show')) {
+        //                        dropMenu.style.display = "none";
+        //                    }
+        //                    else {
+        //                        dropMenu.style.display = "block";
+        //                    }
+        //                });
+        //            });
+        //        }
+        //    })();
+        //}
+
+    </script>
+
+     
+</body>
+</html>

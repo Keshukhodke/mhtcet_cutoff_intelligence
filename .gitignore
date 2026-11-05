@@ -6,8 +6,21 @@ env/
 venv/
 .pytest_cache/
 .vscode/
+.ipynb_checkpoints/
 
-# Ignore intermediate working files
+# Word temp lock files
+~$*
+
+# Temporary test profiles / browser cache
+screenshots/temp_profile/
+
+# Frontend builds and dependencies
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+
+# Large generated datasets that exceed GitHub's recommended limits (can be generated via scripts)
+frontend/public/data/historicalAnalyzerData.json
+frontend/dist/data/historicalAnalyzerData.json
 data/intermediate/
 
-# Optionally ignore raw if too big, but let's keep it for now unless user wants to drop it

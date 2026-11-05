@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" crossorigin="anonymous" /><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs; removed 4.5.0-specific SRI hash to avoid mismatch -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Images/NEWDTE.ico" type="image/x-icon" />
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/FuncLib.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ExpanderMenu.js" type="text/javascript"></script>
+
+ 
+    
+    <link href="../SBAdmin/dist/css/styles.css" rel="stylesheet" /><link href="../sbadmin/dist/css/dashboard.css" rel="stylesheet" /><link href="../sbadmin/dist/css/expandermenu.css" rel="stylesheet" /><link href="../sbadmin/dist/css/grid.css" rel="stylesheet" /><link href="../sbadmin/dist/css/innerstyle.css" rel="stylesheet" /><link href="../sbadmin/dist/css/interface.css" rel="stylesheet" /><link href="../sbadmin/dist/css/login.css" rel="stylesheet" /><link href="../sbadmin/dist/css/stepsform.css" rel="stylesheet" /><link href="../SBAdmin/dist/css/GIGW.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" /><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+
+   
+     
+    <script type="text/javascript">
+        var f_size = 12;
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('MenuLink_9805').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_2441').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7635').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7640').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7641').childNodes[0].setAttribute('target', '_blank');
+
+            //document.getElementById('MenuLink_9730').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9731').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9732').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7638').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7712').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7713').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7658').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4511').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4512').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4516').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4513').childNodes[0].setAttribute('target', '_blank');
+        }
+    </script> 
+
+<link href="../App_Themes/default/dashboard.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/ExpanderMenu.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/grid.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/InnerStyle.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/interface.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/stepsForm.css" type="text/css" rel="stylesheet" /><title>
+	..:: State Common Entrance Test Cell, Government of Maharashtra ::..
+</title></head>
+<body class="">
+    <form method="post" action="./frmInstituteSummary?InstituteCode=04138" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMIVK_aqZpr-zghEcEbZiT1AyIsIspkYyLVc0l0LeOF4pBOWndimhHHy8Ria-mY4JQ2&amp;t=639190941605538696" type="text/javascript"></script>
+
+
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C0A976CA" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainScriptManager', 'form1', ['tctl00$upShowMsg','upShowMsg'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <nav class="navbar navbar-top sticky-top navbar-expand-lg p-0 " style="display:none" >
+            <div class="row mx-auto w-100">
+                <div class="col-sm-12">
+                    <div class="container-fluid px-0 top-nav-height">
+                        <ul class="list-code px-0">
+                            <li class="nav-item border-left desktop-view">
+                                <a class="nav-link" href="#topdiv">Skip to main content</a>
+                            </li>
+                        </ul>
+                        <ul class="list-code px-0 ml-auto">
+                            <li class="nav-item border-left" title="Screen Reader Access">
+                                <a class="nav-link" href="../Gigw/frmScreenreader.aspx">
+                                    <em class="fa fa-volume-up"></em>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown social" title="Accessiblility Dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <em class="fas fa-font"></em>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                                    <a class="dropdown-item" href="#" title="Decrease font size" id="zoom-out">A-</a>
+                                    <a class="dropdown-item" href="#" title="Reset font size" id="zoom">A</a>
+                                    <a class="dropdown-item" href="#" title="Increase font size" id="zoom-in">A+</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" title="Contrast">
+                                <a class="nav-link" href="#" id="contrast1"><em class="fa fa-adjust"></em></a>
+                                <a class="nav-link" href="#" id="contrast2" style="display: none;"><em class="fa fa-adjust fa-flip-horizontal"></em></a>
+                            </li>
+                         
+                            <li class="nav-item" title="Sitemap">
+                                <a class="nav-link" href="../Gigw/frmSitemap.aspx"><em class="fas fa-sitemap"></em></a>
+                            </li>
+                                                      
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       
+          <nav class="sb-topnav navbar sticky-top navbar-expand navbar-dark bg-white py-md-1 py-0">
+            <div class="container-fluid">
+                <div class="row w-100 mx-auto">
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="d-flex">
+                                <div class=" pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img alt="Logo" src="../Images/satyamevjayte.png" class="logo-satyamevjayte img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3 pl-3">
+                                        <img alt="Logo" src="../Images/WebsiteLogo.png" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="text-left headname">
+                                    <div class="text-first pt-2">GOVERNMENT OF MAHARASHTRA </div>
+                                    <div class="text-second">State Common Entrance Test Cell</div>
+                                   <p><span>First Year Under Graduate Technical Courses in Engineering and Technology (4 Years) &<br /> Master of Engineering and Technology (Integrated 5 Years) Admissions A.Y. 2026-27</span></p>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                       <img src="../Images/ARAFINAL.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img src="../Images/SealofMaharashtra.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-auto d-flex align-items-center">
+                                <div class="d-none d-sm-inline-block pr-3" style="width: 350px;">
+                                    
+<div class=" d-inline mb-responsive-help" style="font-size: 14px; color: #0e3f8a; font-family: Verdana; line-height: 23px;">
+    Technical Helpline Number
+    <br />
+    (10:00 AM to 06:00 PM)
+                        <br />
+    <img src="../Images/baseline_call_black_18dp.png" style="width: 17px; vertical-align: middle;" />
+    +91-9175108612, 18002098851
+                            <br />
+     
+    
+    
+   
+</div>
+
+                                </div>
+                                <div class="float-right d-sm-inline d-lg-none toggle-btn">
+                                    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-menu">
+                        <div class="sb-sidenav-menu">
+                            <div class="nav">
+                                <div id="left1" class="left-area">
+                                    <div id="LeftMenu" class="ExpanderMenu">
+	<div class="Style1"   id="MenuGroup_84"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G84">Login Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_1" class="FirstLink"><a href="../StaticPages/HomePage?did=475"><lang key="D475">Home</lang></a></div><div id="MenuLink_9837" class="Link"><a href="https://maha-ara.org/"><lang key="D82566">ARA Home</lang></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_15"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G15">Important Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9875" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_ACAP.pdf"><lang key="D82606">Vacant Seats after CAP IV (ACAP)</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div><div id="MenuLink_1342" class="Link"><a href="../StaticPages/frmInstituteWiseAllotmentList.aspx?did=2021"><lang key="D2021">Institute Wise Allotment List</lang></a></div><div id="MenuLink_1104" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound4.aspx?did=82550"><lang key="D82550">Check Provisional Allotment Status (CAP Round-IV)</lang></a></div><div id="MenuLink_9873" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_AI_CutOff.pdf"><lang key="D82604">CAP Round IV AI Cut Off</lang></a></div><div id="MenuLink_9872" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf"><lang key="D82603">CAP Round IV MH Cut Off</lang></a></div><div id="MenuLink_9874" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_Diploma_CutOff.pdf"><lang key="D82605">Diploma Cut off CAP Round IV</lang></a></div><div id="MenuLink_9870" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP4.pdf"><lang key="D82601">Provisional Vacancy Position for CAP Round-IV </lang></a></div><div id="MenuLink_9869" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf"><lang key="D82600">CAP Round III MH Cut Off </lang></a></div><div id="MenuLink_9868" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_AI_CutOff.pdf"><lang key="D82599">CAP Round III AI Cut Off</lang></a></div><div id="MenuLink_1062" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound3.aspx?did=1948"><lang key="D1948">Check Provisional Allotment Status (CAP Round-III)</lang></a></div><div id="MenuLink_9866" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3.pdf"><lang key="D82597">Provisional Vacancy Position for CAP Round-III</lang></a></div><div id="MenuLink_9867" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3_NewInstitute_CourtOder.pdf"><lang key="D82598">Provisional Vacancy Position for New Institute as per Court Order in CAP Round-III</lang></a></div><div id="MenuLink_817" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound2.aspx?did=1292"><lang key="D1292">Check Provisional Allotment Status (CAP Round-II)</lang></a></div><div id="MenuLink_9858" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP2.pdf"><lang key="D82589">Provisional Vacancy Position for CAP Round-II</lang></a></div><div id="MenuLink_9862" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_AI_CutOff.pdf"><lang key="D82593">CAP Round II AI Cut Off</lang></a></div><div id="MenuLink_9863" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf"><lang key="D82594">CAP Round II MH Cut Off</lang></a></div><div id="MenuLink_794" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound1.aspx?did=1250"><lang key="D1250">Check Provisional Allotment Status (CAP Round-I)</lang></a></div><div id="MenuLink_9857" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf"><lang key="D82588">CAP Round I MH CutOff</lang></a></div><div id="MenuLink_9856" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_AI_CutOff.pdf"><lang key="D82587">CAP Round I AI Cutoff</lang></a></div><div id="MenuLink_9852" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf"><lang key="D82583">Institute-wise Category-wise Seats (Seat Matrix) for CAP Round-I</lang></a></div><div id="MenuLink_739" class="Link"><a href="../StaticPages/frmCheckFinalMeritStatus.aspx?did=1168&Flag="""><lang key="D1168">Check Final Merit List Status </lang></a></div><div id="MenuLink_737" class="Link"><a href="../StaticPages/frmCheckProvisionalMeritStatus.aspx?did=1166&Flag="""><lang key="D1166">Check Provisional Merit List Status</lang></a></div><div id="MenuLink_1222" class="Link"><a href="../StaticPages/frmInstituteList.aspx?did=1884"><lang key="D1884">List of the Colleges with Intake Capacity</lang></a></div><div id="MenuLink_7647" class="Link"><a href="../StaticPages/frmInstituteList_BATU.aspx?did=62354"><lang key="D62354">List of Institutes Affiliated to Dr. BATU, Lonere</lang></a></div><div id="MenuLink_7641" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/44.pdf?did=62341"><lang key="D62341">Registration Manual (Eng)</lang></a></div><div id="MenuLink_7640" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/45.pdf?did=62340"><lang key="D62340">Registration Manual (Mar)</lang></a></div><div id="MenuLink_9853" class="Link"><a href="https://youtu.be/pnFkeS4Gw3s"><lang key="D82584">UM-Option Form Video</lang></a></div><div id="MenuLink_655" class="Link"><a href="../StaticPages/frmApplicationFacilitationCenters.aspx?did=1038"><lang key="D1038">Scrutiny Center List</lang></a></div><div id="MenuLink_9855" class="Link"><a href="https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report"><lang key="D82586">Fee Approved by Fees Regulating Authority, Maharashtra for Academic Year 2026-27</lang></a></div><div id="MenuLink_9865" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_OffCampus_Institutes.pdf"><lang key="D82596">List of Off-Campus Institutes </lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_245"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G245">Rules and Brochure </lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9805" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/PublicPages/Information_Brochure_UG_PG_2026_27_dt_2_7_2026_DHG_1_Display.pdf"><lang key="D82533">Information Brochure for Academic Year 2026-27</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div>
+</div><script language="javascript" type="text/javascript">Synthesys.ExpanderMenu.RegisterMenu('LeftMenu', []);Synthesys.ExpanderMenu.ProjectName='FE2026';Synthesys.ExpanderMenu.SlideDelay=5;Synthesys.ExpanderMenu.SlidePixel=5;Synthesys.ExpanderMenu.DoFading=false;</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div id="topdiv" class="menu-midbg">
+                        <div id="menu">
+                            <div id="top-menu-index">
+                                <div id="TopMenu" class="TopMenu">
+	<div id="horizontal-menu"><ul><li><a href="../StaticPages/HomePage.aspx?tms=27" id="TopMenuLink_27" leftmenus="15,84,245,255,"><lang key="T27">Home</lang></a></li><li><a href="../StaticPages/frmImportantDates.aspx?tms=33" id="TopMenuLink_33" leftmenus=""><lang key="T33">Important Dates</lang></a></li><li><a href="../StaticPages/frmNotifications.aspx?tms=61" id="TopMenuLink_61" leftmenus=""><lang key="T61">Notifications</lang></a></li><li><a href="../StaticPages/frmNews.aspx?tms=67" id="TopMenuLink_67" leftmenus=""><lang key="T67">News</lang></a></li><li><a href="../StaticPages/frmDownloads.aspx?tms=62" id="TopMenuLink_62" leftmenus=""><lang key="T62">Downloads</lang></a></li><li><a href="../StaticPages/frmContactUs.aspx?tms=63" id="TopMenuLink_63" leftmenus=""><lang key="T63">Contact Us</lang></a></li></ul></div>
+</div><script language="javascript" type="text/javascript">Synthesys.TopMenu.RegisterMenu('TopMenu');Synthesys.TopMenu.TopMenuFirstLinkId=27;Synthesys.TopMenu.SetSelected('27');</script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div id="rightContainer1" class="inner_rightarea">
+                        <span id="upShowMsg">
+                                <span id="ShowMsg" class="ShowMessage"></span>
+                            </span>
+                        
+    <div id="rightContainer_ContentBox1" class="ContentBox">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Institute Summary</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv">
+			
+        <table class="AppFormTable">
+            <tr>
+                <td align="right">Institute Code</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteCode" style="font-weight:bold;">04138</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Name</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteName" style="font-weight:bold;">Jaidev Education Society, J D College of Engineering and Management, Nagpur </span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Address</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteAddress" style="font-weight:bold;">At Khandala, Post Vaini Katol Road, Nagpur</span></td>
+            </tr>
+            <tr>
+                <td align="right">Region</td>
+                <td><span id="rightContainer_ContentBox1_lblRegion" style="font-weight:bold;">Nagpur</span></td>
+                <td align="right">District</td>
+                <td><span id="rightContainer_ContentBox1_lblDistrict" style="font-weight:bold;">Nagpur</span></td>
+            </tr>
+            <tr>
+                <td style ="width:25%" align="right">Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus1" style="font-weight:bold;">Un-Aided</span></td>
+                <td style ="width:25%" align="right">Autonomy Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus2" style="font-weight:bold;">Autonomous</span></td>
+            </tr>
+            <tr>
+                <td align="right">Minority Status</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblStatus3" style="font-weight:bold;">Linguistic Minority - Hindi</span></td>
+            </tr>
+            <tr>
+                <td align="right">Public Remark</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblPublicRemark" style="font-weight:bold;"></span></td>
+            </tr>
+        </table>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script type="text/javascript" language="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js"></script><script language="javascript" type="text/javascript">var rightContainer_ContentBox1= document.getElementById('rightContainer_ContentBox1');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox1,false,false,false,false);</script>
+    <div id="rightContainer_ContentBox7" class="ContentBox" style="width:100%;">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Course Details</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv" style="overflow:auto;">
+			
+        <div>
+				<table class="DataGrid" cellspacing="0" cellpadding="5" rules="all" border="1" id="rightContainer_ContentBox7_gvChoiceCodeList" style="width:100%;border-collapse:collapse;">
+					<tr>
+						<th class="Header" align="center" scope="col" style="white-space:nowrap;">Choice Code</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Course Name</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">University</th><th class="Header" align="center" scope="col">Status</th><th class="Header" align="center" scope="col">Autonomy Status</th><th class="Header" align="center" scope="col">Minority Status</th><th class="Header" align="center" scope="col">Shift</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Accreditation</th><th class="Header" align="center" scope="col">Gender</th><th class="Header" align="center" scope="col">Total Intake</th>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413819110</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413819111T</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413824210</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413824211T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413824610</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413824611T</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413826010</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering (Cyber Security)</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413826011T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering (Cyber Security)</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413829310</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413829311T</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413837210</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413837211T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413861210</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413861211T</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413891210</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering(Data Science)</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413891211T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering(Data Science)</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413899710</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0413899711T</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence</td><td class="Item" align="center" style="white-space:nowrap;">Dr. Babasaheb Ambedkar Technological University,Lonere</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Linguistic Minority - Hindi</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr>
+				</table>
+			</div>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script language="javascript" type="text/javascript">var rightContainer_ContentBox7= document.getElementById('rightContainer_ContentBox7');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox7,false,false,false,false);</script>
+
+                    </div>
+                </main>
+               
+                
+                
+<div id="footer1" class="bottombg">
+    <div class="bottom-link">
+      
+        
+        <font size="4" class="footer-head pb-3">Office Address</font>
+
+        <br />
+       <br />
+        <font size="3" class="footer-text p-3">8th Floor, New Excelsior Building, A.K.Nayak Marg, Fort, Mumbai-400001. (M.S.)</font>
+    
+        
+    </div>
+      <div class="p-3" style="border-top:1px solid grey ">
+        <div class="site-info">
+            <p style="font-size: 12px;color:grey">Copyright © State CET Cell,Maharashtra State, Mumbai. All rights reserved.(W2), 2026.</p>
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs -->
+    <script src="../SBAdmin/dist/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    
+    
+    
+
+    
+    <script>
+
+        // JavaScript source code
+        if (typeof (localStorage) == 'undefined') {
+            alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+        } else {
+            if (localStorage.getItem("background") != null) {
+                $("#contrast1").hide();
+                $("#contrast2").show();
+                getColour = localStorage.background;
+                $('body').css('background', getColour);
+                $('div,footer,nav,a,.ul-title,td,.InputButton,.Header,.panel-head').css('background', getColour);
+                $('p,span,a,td,div,footer,.InputButton,.Header,.panel-head,.firstLine').css('color', 'yellow');
+                $('.info-section,.info-section div,a.carousel-caption').css('background', '');
+                $('.info-section, .info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+                $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+                $('.ttl').css('border', '1px solid red');
+                $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+            }
+            else {
+                $("#contrast2").hide();
+                $("#contrast1").show();
+            }
+        }
+
+
+        $("#contrast1").click(function () {
+            location.reload();
+            setColour = "black";
+
+
+            /*to more test color can change and retest*/
+            if (setColour == "") {
+                alert('You never entered anything silly!');
+                return;
+            }
+            localStorage.setItem("background", setColour);
+            localStorage.setItem("color", settextColor);
+            getColour = localStorage.background;
+
+            $('body').css('background', getColour);
+            $('div,footer,nav,a,.ul-title,td').css('background', getColour);
+            $('p,span,a,td,div,footer,.fa').css('color', 'yellow');
+            $('.info-section,.info-section div,a,.carousel-caption').css('background', '');
+            $('.info-section,.info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+            $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+
+            $('.ttl').css('border', '1px solid red');
+            $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+        });
+        $(document).ready(function () {
+            $("#contrast2").click(function () {
+                location.reload();
+                localStorage.removeItem('background');
+            });
+        });
+
+
+        $('.hide').hide();
+        $('#hidebutton').hide();
+        $('#showbutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').hide();
+            $('#hidebutton').show();
+        });
+
+        $('#hidebutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').show();
+            $('#hidebutton').hide();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('open');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('open');
+            });
+
+        $('.right-panel #sidebar').hide();
+        $(document).ready(function () {
+            $('.right-panel #sidebar').hide();
+            $('#sidebarCollapse').on('click', function () {
+                $('.right-panel #sidebar').toggle();
+
+            });
+
+        });
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        var isPresent = document.getElementById('photo-gallery');
+        if (isPresent > 0) {
+            showSlides(slideIndex);
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+        $(document).ready(function () {
+            var allElement = $('h1,h2,h3,h4,h5,h6,p,a,span, .table td, .table th, li, i, em');
+            console.log(allElement);
+            let originalArray = [];
+
+            for (var i = 0; i < allElement.length; i++) {
+                var originalSize = $(allElement[i]).css('font-size');
+                originalArray.push(originalSize);
+            }
+
+
+            var localArray = localStorage.getItem('fonts');
+            if (localStorage.getItem("fonts") != null) {
+
+                var floatArray = [];
+                let pasreValue;
+
+                pasreValue = JSON.parse(localArray);
+                var floatValue;
+                for (var x = 0; x < pasreValue.length; x++) {
+                    floatValue = parseFloat(pasreValue[x]);
+
+                    floatArray.push(floatValue);
+
+                }
+                console.log(floatArray);
+
+                for (var i = 0; i < allElement.length; i++) {
+                    $(allElement[i]).css('font-size', floatArray[i] + 'px');
+
+                }
+
+            }
+
+            // Increase Font Size  
+
+            var count = 0;
+
+            $("#zoom-in").one('click', function () {
+                count = localStorage.getItem('count');
+
+                if (count <= 0) {
+
+                    count++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) + 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+
+
+                        ////alert(parseFloat(originalSize) + 2);
+                        //console.log($(allElement[i]));
+                        //console.log($(allElement[i]) + " /" +originalSize + " /" + increaseSize);
+
+
+                    }
+
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count', count);
+                }
+            });
+
+            // Decrease Font Size 
+
+
+            let namesArr = [];
+            var count1 = 0;
+            $("#zoom-out").one('click', function () {
+                count1 = localStorage.getItem('count1');
+
+                if (count1 <= 0) {
+                    count1++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) - 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+                    }
+                    //console.log(namesArr);
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count1', count1);
+                }
+            });
+
+            // reset Font Size
+
+
+            $("#zoom").one('click', function () {
+                location.reload();
+                localStorage.removeItem('fonts');
+                localStorage.removeItem('count');
+                localStorage.removeItem('count1');
+            });
+
+
+        });
+
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+
+        $('.v-playmarquee').hide();
+        $('.h-playmarquee').hide();
+
+        function calcSpeed() {
+            var liTime = 5;
+
+            var spanSelector = document.querySelectorAll('.marquee');
+            for (var i = 0; i < spanSelector.length; i++) {
+                var marqueeDiv = spanSelector[i];
+
+                marqueeUL = marqueeDiv.children[0];
+
+                marqueeElemts = marqueeUL.childElementCount;
+                //console.log(marqueeElemts);
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    marqueeULHeight = marqueeUL.offsetHeight;
+                    //console.log(marqueeULHeight);
+                    liTime = 4;
+                    var vPlay = document.querySelectorAll('.v-playmarquee');
+
+                    var vPause = document.querySelectorAll('.v-pausemarquee');
+                    vPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "inline-block";
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "paused";
+                        });
+                    });
+                    vPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "inline-block";;
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "running";
+                        });
+                    });
+                }
+
+                else if (marqueeUL.classList.contains('marquee-horizontal')) {
+                    marqueeULWidth = marqueeUL.scrollWidth;
+                    console.log(marqueeULWidth);
+                    liTime = 8;
+                    var hPlay = document.querySelectorAll('.h-playmarquee');
+                    var hPause = document.querySelectorAll('.h-pausemarquee');
+                    hPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "paused";
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "block";
+
+                        });
+                    });
+                    hPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "running";
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "block";
+
+                        });
+                    });
+                }
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    var spanTime = marqueeULHeight / 16;
+                }
+                else {
+                    spanTime = marqueeULWidth / 22;
+                    console.log(marqueeULWidth);
+                    console.log(spanTime);
+                }
+
+                //console.log(spanTime);
+                marqueeUL.style.animationDuration = spanTime + "s";
+            }
+        }
+        calcSpeed();
+
+        $('.marquee a').click(function () {
+            window.location.reload();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('show');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('show');
+            });
+
+        //window.onload = function () {
+        //    (function () {
+        //        var viewportWidth = $(window).width();
+        //        if (viewportWidth < 800) {
+
+        //            var dropdownBtn = document.querySelectorAll('.dropdown-toggle');
+        //            //console.log(dropdownBtn);
+        //            dropdownBtn.forEach(function (btn) {
+        //                btn.addEventListener('click', function (event) {
+        //                    var dropMenu = event.target.nextSibling.nextSibling;
+        //                    if (dropMenu.classList.contains('show')) {
+        //                        dropMenu.style.display = "none";
+        //                    }
+        //                    else {
+        //                        dropMenu.style.display = "block";
+        //                    }
+        //                });
+        //            });
+        //        }
+        //    })();
+        //}
+
+    </script>
+
+     
+</body>
+</html>

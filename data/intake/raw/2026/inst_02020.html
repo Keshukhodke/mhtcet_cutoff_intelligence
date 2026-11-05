@@ -1,0 +1,764 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" crossorigin="anonymous" /><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs; removed 4.5.0-specific SRI hash to avoid mismatch -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Images/NEWDTE.ico" type="image/x-icon" />
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/FuncLib.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ExpanderMenu.js" type="text/javascript"></script>
+
+ 
+    
+    <link href="../SBAdmin/dist/css/styles.css" rel="stylesheet" /><link href="../sbadmin/dist/css/dashboard.css" rel="stylesheet" /><link href="../sbadmin/dist/css/expandermenu.css" rel="stylesheet" /><link href="../sbadmin/dist/css/grid.css" rel="stylesheet" /><link href="../sbadmin/dist/css/innerstyle.css" rel="stylesheet" /><link href="../sbadmin/dist/css/interface.css" rel="stylesheet" /><link href="../sbadmin/dist/css/login.css" rel="stylesheet" /><link href="../sbadmin/dist/css/stepsform.css" rel="stylesheet" /><link href="../SBAdmin/dist/css/GIGW.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" /><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+
+   
+     
+    <script type="text/javascript">
+        var f_size = 12;
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('MenuLink_9805').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_2441').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7635').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7640').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7641').childNodes[0].setAttribute('target', '_blank');
+
+            //document.getElementById('MenuLink_9730').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9731').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9732').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7638').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7712').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7713').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7658').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4511').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4512').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4516').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4513').childNodes[0].setAttribute('target', '_blank');
+        }
+    </script> 
+
+<link href="../App_Themes/default/dashboard.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/ExpanderMenu.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/grid.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/InnerStyle.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/interface.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/stepsForm.css" type="text/css" rel="stylesheet" /><title>
+	..:: State Common Entrance Test Cell, Government of Maharashtra ::..
+</title></head>
+<body class="">
+    <form method="post" action="./frmInstituteSummary?InstituteCode=02020" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMIVK_aqZpr-zghEcEbZiT1AyIsIspkYyLVc0l0LeOF4pBOWndimhHHy8Ria-mY4JQ2&amp;t=639190941605538696" type="text/javascript"></script>
+
+
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C0A976CA" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainScriptManager', 'form1', ['tctl00$upShowMsg','upShowMsg'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <nav class="navbar navbar-top sticky-top navbar-expand-lg p-0 " style="display:none" >
+            <div class="row mx-auto w-100">
+                <div class="col-sm-12">
+                    <div class="container-fluid px-0 top-nav-height">
+                        <ul class="list-code px-0">
+                            <li class="nav-item border-left desktop-view">
+                                <a class="nav-link" href="#topdiv">Skip to main content</a>
+                            </li>
+                        </ul>
+                        <ul class="list-code px-0 ml-auto">
+                            <li class="nav-item border-left" title="Screen Reader Access">
+                                <a class="nav-link" href="../Gigw/frmScreenreader.aspx">
+                                    <em class="fa fa-volume-up"></em>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown social" title="Accessiblility Dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <em class="fas fa-font"></em>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                                    <a class="dropdown-item" href="#" title="Decrease font size" id="zoom-out">A-</a>
+                                    <a class="dropdown-item" href="#" title="Reset font size" id="zoom">A</a>
+                                    <a class="dropdown-item" href="#" title="Increase font size" id="zoom-in">A+</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" title="Contrast">
+                                <a class="nav-link" href="#" id="contrast1"><em class="fa fa-adjust"></em></a>
+                                <a class="nav-link" href="#" id="contrast2" style="display: none;"><em class="fa fa-adjust fa-flip-horizontal"></em></a>
+                            </li>
+                         
+                            <li class="nav-item" title="Sitemap">
+                                <a class="nav-link" href="../Gigw/frmSitemap.aspx"><em class="fas fa-sitemap"></em></a>
+                            </li>
+                                                      
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       
+          <nav class="sb-topnav navbar sticky-top navbar-expand navbar-dark bg-white py-md-1 py-0">
+            <div class="container-fluid">
+                <div class="row w-100 mx-auto">
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="d-flex">
+                                <div class=" pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img alt="Logo" src="../Images/satyamevjayte.png" class="logo-satyamevjayte img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3 pl-3">
+                                        <img alt="Logo" src="../Images/WebsiteLogo.png" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="text-left headname">
+                                    <div class="text-first pt-2">GOVERNMENT OF MAHARASHTRA </div>
+                                    <div class="text-second">State Common Entrance Test Cell</div>
+                                   <p><span>First Year Under Graduate Technical Courses in Engineering and Technology (4 Years) &<br /> Master of Engineering and Technology (Integrated 5 Years) Admissions A.Y. 2026-27</span></p>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                       <img src="../Images/ARAFINAL.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img src="../Images/SealofMaharashtra.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-auto d-flex align-items-center">
+                                <div class="d-none d-sm-inline-block pr-3" style="width: 350px;">
+                                    
+<div class=" d-inline mb-responsive-help" style="font-size: 14px; color: #0e3f8a; font-family: Verdana; line-height: 23px;">
+    Technical Helpline Number
+    <br />
+    (10:00 AM to 06:00 PM)
+                        <br />
+    <img src="../Images/baseline_call_black_18dp.png" style="width: 17px; vertical-align: middle;" />
+    +91-9175108612, 18002098851
+                            <br />
+     
+    
+    
+   
+</div>
+
+                                </div>
+                                <div class="float-right d-sm-inline d-lg-none toggle-btn">
+                                    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-menu">
+                        <div class="sb-sidenav-menu">
+                            <div class="nav">
+                                <div id="left1" class="left-area">
+                                    <div id="LeftMenu" class="ExpanderMenu">
+	<div class="Style1"   id="MenuGroup_84"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G84">Login Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_1" class="FirstLink"><a href="../StaticPages/HomePage?did=475"><lang key="D475">Home</lang></a></div><div id="MenuLink_9837" class="Link"><a href="https://maha-ara.org/"><lang key="D82566">ARA Home</lang></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_15"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G15">Important Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9875" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_ACAP.pdf"><lang key="D82606">Vacant Seats after CAP IV (ACAP)</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div><div id="MenuLink_1342" class="Link"><a href="../StaticPages/frmInstituteWiseAllotmentList.aspx?did=2021"><lang key="D2021">Institute Wise Allotment List</lang></a></div><div id="MenuLink_1104" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound4.aspx?did=82550"><lang key="D82550">Check Provisional Allotment Status (CAP Round-IV)</lang></a></div><div id="MenuLink_9873" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_AI_CutOff.pdf"><lang key="D82604">CAP Round IV AI Cut Off</lang></a></div><div id="MenuLink_9872" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf"><lang key="D82603">CAP Round IV MH Cut Off</lang></a></div><div id="MenuLink_9874" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_Diploma_CutOff.pdf"><lang key="D82605">Diploma Cut off CAP Round IV</lang></a></div><div id="MenuLink_9870" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP4.pdf"><lang key="D82601">Provisional Vacancy Position for CAP Round-IV </lang></a></div><div id="MenuLink_9869" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf"><lang key="D82600">CAP Round III MH Cut Off </lang></a></div><div id="MenuLink_9868" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_AI_CutOff.pdf"><lang key="D82599">CAP Round III AI Cut Off</lang></a></div><div id="MenuLink_1062" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound3.aspx?did=1948"><lang key="D1948">Check Provisional Allotment Status (CAP Round-III)</lang></a></div><div id="MenuLink_9866" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3.pdf"><lang key="D82597">Provisional Vacancy Position for CAP Round-III</lang></a></div><div id="MenuLink_9867" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3_NewInstitute_CourtOder.pdf"><lang key="D82598">Provisional Vacancy Position for New Institute as per Court Order in CAP Round-III</lang></a></div><div id="MenuLink_817" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound2.aspx?did=1292"><lang key="D1292">Check Provisional Allotment Status (CAP Round-II)</lang></a></div><div id="MenuLink_9858" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP2.pdf"><lang key="D82589">Provisional Vacancy Position for CAP Round-II</lang></a></div><div id="MenuLink_9862" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_AI_CutOff.pdf"><lang key="D82593">CAP Round II AI Cut Off</lang></a></div><div id="MenuLink_9863" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf"><lang key="D82594">CAP Round II MH Cut Off</lang></a></div><div id="MenuLink_794" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound1.aspx?did=1250"><lang key="D1250">Check Provisional Allotment Status (CAP Round-I)</lang></a></div><div id="MenuLink_9857" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf"><lang key="D82588">CAP Round I MH CutOff</lang></a></div><div id="MenuLink_9856" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_AI_CutOff.pdf"><lang key="D82587">CAP Round I AI Cutoff</lang></a></div><div id="MenuLink_9852" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf"><lang key="D82583">Institute-wise Category-wise Seats (Seat Matrix) for CAP Round-I</lang></a></div><div id="MenuLink_739" class="Link"><a href="../StaticPages/frmCheckFinalMeritStatus.aspx?did=1168&Flag="""><lang key="D1168">Check Final Merit List Status </lang></a></div><div id="MenuLink_737" class="Link"><a href="../StaticPages/frmCheckProvisionalMeritStatus.aspx?did=1166&Flag="""><lang key="D1166">Check Provisional Merit List Status</lang></a></div><div id="MenuLink_1222" class="Link"><a href="../StaticPages/frmInstituteList.aspx?did=1884"><lang key="D1884">List of the Colleges with Intake Capacity</lang></a></div><div id="MenuLink_7647" class="Link"><a href="../StaticPages/frmInstituteList_BATU.aspx?did=62354"><lang key="D62354">List of Institutes Affiliated to Dr. BATU, Lonere</lang></a></div><div id="MenuLink_7641" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/44.pdf?did=62341"><lang key="D62341">Registration Manual (Eng)</lang></a></div><div id="MenuLink_7640" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/45.pdf?did=62340"><lang key="D62340">Registration Manual (Mar)</lang></a></div><div id="MenuLink_9853" class="Link"><a href="https://youtu.be/pnFkeS4Gw3s"><lang key="D82584">UM-Option Form Video</lang></a></div><div id="MenuLink_655" class="Link"><a href="../StaticPages/frmApplicationFacilitationCenters.aspx?did=1038"><lang key="D1038">Scrutiny Center List</lang></a></div><div id="MenuLink_9855" class="Link"><a href="https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report"><lang key="D82586">Fee Approved by Fees Regulating Authority, Maharashtra for Academic Year 2026-27</lang></a></div><div id="MenuLink_9865" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_OffCampus_Institutes.pdf"><lang key="D82596">List of Off-Campus Institutes </lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_245"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G245">Rules and Brochure </lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9805" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/PublicPages/Information_Brochure_UG_PG_2026_27_dt_2_7_2026_DHG_1_Display.pdf"><lang key="D82533">Information Brochure for Academic Year 2026-27</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div>
+</div><script language="javascript" type="text/javascript">Synthesys.ExpanderMenu.RegisterMenu('LeftMenu', []);Synthesys.ExpanderMenu.ProjectName='FE2026';Synthesys.ExpanderMenu.SlideDelay=5;Synthesys.ExpanderMenu.SlidePixel=5;Synthesys.ExpanderMenu.DoFading=false;</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div id="topdiv" class="menu-midbg">
+                        <div id="menu">
+                            <div id="top-menu-index">
+                                <div id="TopMenu" class="TopMenu">
+	<div id="horizontal-menu"><ul><li><a href="../StaticPages/HomePage.aspx?tms=27" id="TopMenuLink_27" leftmenus="15,84,245,255,"><lang key="T27">Home</lang></a></li><li><a href="../StaticPages/frmImportantDates.aspx?tms=33" id="TopMenuLink_33" leftmenus=""><lang key="T33">Important Dates</lang></a></li><li><a href="../StaticPages/frmNotifications.aspx?tms=61" id="TopMenuLink_61" leftmenus=""><lang key="T61">Notifications</lang></a></li><li><a href="../StaticPages/frmNews.aspx?tms=67" id="TopMenuLink_67" leftmenus=""><lang key="T67">News</lang></a></li><li><a href="../StaticPages/frmDownloads.aspx?tms=62" id="TopMenuLink_62" leftmenus=""><lang key="T62">Downloads</lang></a></li><li><a href="../StaticPages/frmContactUs.aspx?tms=63" id="TopMenuLink_63" leftmenus=""><lang key="T63">Contact Us</lang></a></li></ul></div>
+</div><script language="javascript" type="text/javascript">Synthesys.TopMenu.RegisterMenu('TopMenu');Synthesys.TopMenu.TopMenuFirstLinkId=27;Synthesys.TopMenu.SetSelected('27');</script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div id="rightContainer1" class="inner_rightarea">
+                        <span id="upShowMsg">
+                                <span id="ShowMsg" class="ShowMessage"></span>
+                            </span>
+                        
+    <div id="rightContainer_ContentBox1" class="ContentBox">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Institute Summary</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv">
+			
+        <table class="AppFormTable">
+            <tr>
+                <td align="right">Institute Code</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteCode" style="font-weight:bold;">02020</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Name</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteName" style="font-weight:bold;">Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Address</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteAddress" style="font-weight:bold;">Vishnupuri, Nanded</span></td>
+            </tr>
+            <tr>
+                <td align="right">Region</td>
+                <td><span id="rightContainer_ContentBox1_lblRegion" style="font-weight:bold;">Aurangabad</span></td>
+                <td align="right">District</td>
+                <td><span id="rightContainer_ContentBox1_lblDistrict" style="font-weight:bold;">Nanded</span></td>
+            </tr>
+            <tr>
+                <td style ="width:25%" align="right">Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus1" style="font-weight:bold;">Government-Aided</span></td>
+                <td style ="width:25%" align="right">Autonomy Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus2" style="font-weight:bold;">Autonomous</span></td>
+            </tr>
+            <tr>
+                <td align="right">Minority Status</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblStatus3" style="font-weight:bold;">Non-Minority</span></td>
+            </tr>
+            <tr>
+                <td align="right">Public Remark</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblPublicRemark" style="font-weight:bold;"></span></td>
+            </tr>
+        </table>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script type="text/javascript" language="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js"></script><script language="javascript" type="text/javascript">var rightContainer_ContentBox1= document.getElementById('rightContainer_ContentBox1');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox1,false,false,false,false);</script>
+    <div id="rightContainer_ContentBox7" class="ContentBox" style="width:100%;">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Course Details</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv" style="overflow:auto;">
+			
+        <div>
+				<table class="DataGrid" cellspacing="0" cellpadding="5" rules="all" border="1" id="rightContainer_ContentBox7_gvChoiceCodeList" style="width:100%;border-collapse:collapse;">
+					<tr>
+						<th class="Header" align="center" scope="col" style="white-space:nowrap;">Choice Code</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Course Name</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">University</th><th class="Header" align="center" scope="col">Status</th><th class="Header" align="center" scope="col">Autonomy Status</th><th class="Header" align="center" scope="col">Minority Status</th><th class="Header" align="center" scope="col">Shift</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Accreditation</th><th class="Header" align="center" scope="col">Gender</th><th class="Header" align="center" scope="col">Total Intake</th>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202019110</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202019111T</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202024210</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202024211T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Science and Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202024610</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202024611T</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202029310</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202029311T</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202037210</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202037211T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202046610</td><td class="Item" align="center" style="white-space:nowrap;">Instrumentation Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">40</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202046611T</td><td class="Item" align="center" style="white-space:nowrap;">Instrumentation Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202050710</td><td class="Item" align="center" style="white-space:nowrap;">Chemical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202050711T</td><td class="Item" align="center" style="white-space:nowrap;">Chemical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202060610</td><td class="Item" align="center" style="white-space:nowrap;">Production Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202060611T</td><td class="Item" align="center" style="white-space:nowrap;">Production Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202061210</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202061211T</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202089610</td><td class="Item" align="center" style="white-space:nowrap;">Textile Technology</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">30</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0202089611T</td><td class="Item" align="center" style="white-space:nowrap;">Textile Technology</td><td class="Item" align="center" style="white-space:nowrap;">Swami Ramanand Teerth Marathwada University, Nanded</td><td class="Item" align="center" style="white-space:nowrap;">Government-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">2</td>
+					</tr>
+				</table>
+			</div>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script language="javascript" type="text/javascript">var rightContainer_ContentBox7= document.getElementById('rightContainer_ContentBox7');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox7,false,false,false,false);</script>
+
+                    </div>
+                </main>
+               
+                
+                
+<div id="footer1" class="bottombg">
+    <div class="bottom-link">
+      
+        
+        <font size="4" class="footer-head pb-3">Office Address</font>
+
+        <br />
+       <br />
+        <font size="3" class="footer-text p-3">8th Floor, New Excelsior Building, A.K.Nayak Marg, Fort, Mumbai-400001. (M.S.)</font>
+    
+        
+    </div>
+      <div class="p-3" style="border-top:1px solid grey ">
+        <div class="site-info">
+            <p style="font-size: 12px;color:grey">Copyright © State CET Cell,Maharashtra State, Mumbai. All rights reserved.(W2), 2026.</p>
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs -->
+    <script src="../SBAdmin/dist/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    
+    
+    
+
+    
+    <script>
+
+        // JavaScript source code
+        if (typeof (localStorage) == 'undefined') {
+            alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+        } else {
+            if (localStorage.getItem("background") != null) {
+                $("#contrast1").hide();
+                $("#contrast2").show();
+                getColour = localStorage.background;
+                $('body').css('background', getColour);
+                $('div,footer,nav,a,.ul-title,td,.InputButton,.Header,.panel-head').css('background', getColour);
+                $('p,span,a,td,div,footer,.InputButton,.Header,.panel-head,.firstLine').css('color', 'yellow');
+                $('.info-section,.info-section div,a.carousel-caption').css('background', '');
+                $('.info-section, .info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+                $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+                $('.ttl').css('border', '1px solid red');
+                $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+            }
+            else {
+                $("#contrast2").hide();
+                $("#contrast1").show();
+            }
+        }
+
+
+        $("#contrast1").click(function () {
+            location.reload();
+            setColour = "black";
+
+
+            /*to more test color can change and retest*/
+            if (setColour == "") {
+                alert('You never entered anything silly!');
+                return;
+            }
+            localStorage.setItem("background", setColour);
+            localStorage.setItem("color", settextColor);
+            getColour = localStorage.background;
+
+            $('body').css('background', getColour);
+            $('div,footer,nav,a,.ul-title,td').css('background', getColour);
+            $('p,span,a,td,div,footer,.fa').css('color', 'yellow');
+            $('.info-section,.info-section div,a,.carousel-caption').css('background', '');
+            $('.info-section,.info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+            $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+
+            $('.ttl').css('border', '1px solid red');
+            $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+        });
+        $(document).ready(function () {
+            $("#contrast2").click(function () {
+                location.reload();
+                localStorage.removeItem('background');
+            });
+        });
+
+
+        $('.hide').hide();
+        $('#hidebutton').hide();
+        $('#showbutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').hide();
+            $('#hidebutton').show();
+        });
+
+        $('#hidebutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').show();
+            $('#hidebutton').hide();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('open');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('open');
+            });
+
+        $('.right-panel #sidebar').hide();
+        $(document).ready(function () {
+            $('.right-panel #sidebar').hide();
+            $('#sidebarCollapse').on('click', function () {
+                $('.right-panel #sidebar').toggle();
+
+            });
+
+        });
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        var isPresent = document.getElementById('photo-gallery');
+        if (isPresent > 0) {
+            showSlides(slideIndex);
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+        $(document).ready(function () {
+            var allElement = $('h1,h2,h3,h4,h5,h6,p,a,span, .table td, .table th, li, i, em');
+            console.log(allElement);
+            let originalArray = [];
+
+            for (var i = 0; i < allElement.length; i++) {
+                var originalSize = $(allElement[i]).css('font-size');
+                originalArray.push(originalSize);
+            }
+
+
+            var localArray = localStorage.getItem('fonts');
+            if (localStorage.getItem("fonts") != null) {
+
+                var floatArray = [];
+                let pasreValue;
+
+                pasreValue = JSON.parse(localArray);
+                var floatValue;
+                for (var x = 0; x < pasreValue.length; x++) {
+                    floatValue = parseFloat(pasreValue[x]);
+
+                    floatArray.push(floatValue);
+
+                }
+                console.log(floatArray);
+
+                for (var i = 0; i < allElement.length; i++) {
+                    $(allElement[i]).css('font-size', floatArray[i] + 'px');
+
+                }
+
+            }
+
+            // Increase Font Size  
+
+            var count = 0;
+
+            $("#zoom-in").one('click', function () {
+                count = localStorage.getItem('count');
+
+                if (count <= 0) {
+
+                    count++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) + 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+
+
+                        ////alert(parseFloat(originalSize) + 2);
+                        //console.log($(allElement[i]));
+                        //console.log($(allElement[i]) + " /" +originalSize + " /" + increaseSize);
+
+
+                    }
+
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count', count);
+                }
+            });
+
+            // Decrease Font Size 
+
+
+            let namesArr = [];
+            var count1 = 0;
+            $("#zoom-out").one('click', function () {
+                count1 = localStorage.getItem('count1');
+
+                if (count1 <= 0) {
+                    count1++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) - 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+                    }
+                    //console.log(namesArr);
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count1', count1);
+                }
+            });
+
+            // reset Font Size
+
+
+            $("#zoom").one('click', function () {
+                location.reload();
+                localStorage.removeItem('fonts');
+                localStorage.removeItem('count');
+                localStorage.removeItem('count1');
+            });
+
+
+        });
+
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+
+        $('.v-playmarquee').hide();
+        $('.h-playmarquee').hide();
+
+        function calcSpeed() {
+            var liTime = 5;
+
+            var spanSelector = document.querySelectorAll('.marquee');
+            for (var i = 0; i < spanSelector.length; i++) {
+                var marqueeDiv = spanSelector[i];
+
+                marqueeUL = marqueeDiv.children[0];
+
+                marqueeElemts = marqueeUL.childElementCount;
+                //console.log(marqueeElemts);
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    marqueeULHeight = marqueeUL.offsetHeight;
+                    //console.log(marqueeULHeight);
+                    liTime = 4;
+                    var vPlay = document.querySelectorAll('.v-playmarquee');
+
+                    var vPause = document.querySelectorAll('.v-pausemarquee');
+                    vPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "inline-block";
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "paused";
+                        });
+                    });
+                    vPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "inline-block";;
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "running";
+                        });
+                    });
+                }
+
+                else if (marqueeUL.classList.contains('marquee-horizontal')) {
+                    marqueeULWidth = marqueeUL.scrollWidth;
+                    console.log(marqueeULWidth);
+                    liTime = 8;
+                    var hPlay = document.querySelectorAll('.h-playmarquee');
+                    var hPause = document.querySelectorAll('.h-pausemarquee');
+                    hPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "paused";
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "block";
+
+                        });
+                    });
+                    hPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "running";
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "block";
+
+                        });
+                    });
+                }
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    var spanTime = marqueeULHeight / 16;
+                }
+                else {
+                    spanTime = marqueeULWidth / 22;
+                    console.log(marqueeULWidth);
+                    console.log(spanTime);
+                }
+
+                //console.log(spanTime);
+                marqueeUL.style.animationDuration = spanTime + "s";
+            }
+        }
+        calcSpeed();
+
+        $('.marquee a').click(function () {
+            window.location.reload();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('show');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('show');
+            });
+
+        //window.onload = function () {
+        //    (function () {
+        //        var viewportWidth = $(window).width();
+        //        if (viewportWidth < 800) {
+
+        //            var dropdownBtn = document.querySelectorAll('.dropdown-toggle');
+        //            //console.log(dropdownBtn);
+        //            dropdownBtn.forEach(function (btn) {
+        //                btn.addEventListener('click', function (event) {
+        //                    var dropMenu = event.target.nextSibling.nextSibling;
+        //                    if (dropMenu.classList.contains('show')) {
+        //                        dropMenu.style.display = "none";
+        //                    }
+        //                    else {
+        //                        dropMenu.style.display = "block";
+        //                    }
+        //                });
+        //            });
+        //        }
+        //    })();
+        //}
+
+    </script>
+
+     
+</body>
+</html>

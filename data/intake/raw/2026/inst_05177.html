@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head id="Head1"><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/css/bootstrap.min.css" crossorigin="anonymous" /><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs; removed 4.5.0-specific SRI hash to avoid mismatch -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../Images/NEWDTE.ico" type="image/x-icon" />
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/FuncLib.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js" type="text/javascript"></script>
+    <script lang="javascript" src="../SynthesysModules_Files/Scripts/ExpanderMenu.js" type="text/javascript"></script>
+
+ 
+    
+    <link href="../SBAdmin/dist/css/styles.css" rel="stylesheet" /><link href="../sbadmin/dist/css/dashboard.css" rel="stylesheet" /><link href="../sbadmin/dist/css/expandermenu.css" rel="stylesheet" /><link href="../sbadmin/dist/css/grid.css" rel="stylesheet" /><link href="../sbadmin/dist/css/innerstyle.css" rel="stylesheet" /><link href="../sbadmin/dist/css/interface.css" rel="stylesheet" /><link href="../sbadmin/dist/css/login.css" rel="stylesheet" /><link href="../sbadmin/dist/css/stepsform.css" rel="stylesheet" /><link href="../SBAdmin/dist/css/GIGW.css" rel="stylesheet" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" /><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    
+
+   
+     
+    <script type="text/javascript">
+        var f_size = 12;
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('MenuLink_9805').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_2441').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7635').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7640').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7641').childNodes[0].setAttribute('target', '_blank');
+
+            //document.getElementById('MenuLink_9730').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9731').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_9732').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7638').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7712').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7713').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_7658').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4511').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4512').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4516').childNodes[0].setAttribute('target', '_blank');
+            //document.getElementById('MenuLink_4513').childNodes[0].setAttribute('target', '_blank');
+        }
+    </script> 
+
+<link href="../App_Themes/default/dashboard.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/ExpanderMenu.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/grid.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/InnerStyle.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/interface.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/login.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/default/stepsForm.css" type="text/css" rel="stylesheet" /><title>
+	..:: State Common Entrance Test Cell, Government of Maharashtra ::..
+</title></head>
+<body class="">
+    <form method="post" action="./frmInstituteSummary?InstituteCode=05177" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="TJbpFMsQft+3rTSYhy9sUaxHy1aereUVmywJx3Wus6L8bLDd+xyFF0qUYsTJX3b9zRmsM7nyMnqL8LT5JbR5/xZ5oLHeYLWqeyKAkbUDueDitNboaKfv0FTYFjtK6MtMJ+gvcL+Ek4C7coPOcyLDAtqjeCODWsuPOzT08hzrQ5lQ3oaEU2azR4DlTYZCst8YMdBdGVbNSxjCCDV7tdZR44mrBvPbgxyWN7nXM+0Rrk0OhvJF4WFEx+VtXlnZyzjsjeJfUAqe/ozzxXeH8Jfn5zKPe5ektVp+kHFmiKjcePQTduHHiq/nZcDKxnBA1Zz7E2AVCAUNMMjEvLt6noSzsxBpshxILIiOkYx5NEHWiNwLk52k2BmSmbn0Gh/mbHS/JyYqYVWlMf6jLEz/NbxnqRQztaky8zJe6rytOrGElNA1vLJaBb+HqgOyQ3wnZPMB3rATam+TEG+zrQ35aFU00y3ObGj+LTeYIPXSnv8iKHHx7NIzWlKd0YdbyfKsfn0QCE69Q2N6fcA9p/8x5X0SL7sXB9KRNXGlHIjiQYuo8vFkMO1yB/lpEp6DC2AVpbX5XUGQs/tqpEJLwbpfooCRoYHl5PEJe6vXUpK60zdAitfhg2q960ognKmS4leab+AcRfLFRMe8pHoHzjg5dxYlRwCw69JeGo1lcsL38f35mcWYvb7I6MZIFg2b1MdGgBY7o8WMS9vbtIk8+RroN0Y+rN7HKPGNuNvYjlNjiJReoKypYWO7Z/GKyZcus6bjuwsQDJv2dQg2N/HkFlt8jjyi8m2LWWvAuWQrRQ1d2S/TioFhhqeQSsmKGUo00a7Xk1Rc4O7nBondnu449vBova7cmcwDC+QLnFEisHoTLYYbeLJgkPMnQS6dYT2aG6p89C3uezGnIQMbU8uKJc+48IQA9nyambf+DDk76XjV00eATZydyQCmeR5uVaaq1vbhCMTXiEEK0mXTM3+by6BAgmV7ssJV6F3kqjzmlFY7uGdRdUn6zDszr0rtx41YmZn2W1mcbzol0i/oh9ui/edtoxZc8rebXecaEz4j+ryTMAooB0MJRo0wyeK2h2VLRxsIa9Z7WrFtydi6gffcyIl4aVqmsptr5IWtLZLUNQB/KynvywitSnxcaoB4SuHWmY5kv4jUY1AE6/dBL2hNGt7ch9y0xyK5MVobdTdZ+cbhgJLyAjEKuiIPraEPjCdwTZNYmQEw+DP046o5rEgBYC9cFXL/oggJcNggZwSLdZpKEFz0zfwN3EOm+pzIeTfiz0JL+ohsC9zTg3ghWDWioRVYKqcSrZjDzuECWkAvVAy4t68cNHaL3cUjK5g/hTx4v7OSLK3E9eBcnN4StA+x7pwuTXSEGo8QU/fQAwCOCQmktK7bE7kgvqZ/TI5ajuf/vK59caann/tmZo6hRQeRdLK35uupNvbdU9t1u6mWB/BNEJSZc2Rmw3AV2GH82Xd1hqa0x3Rsc4OxbhI7p+XQ5yYBFE5M6xNZk2fQOHPIvYr88ARsrFEVw2ZcrGMn9BiwaSiX7PTSf716tlq4hAOUVyQy/CVA1zfCTblV9yWVcuC16qhqBnI/jpipJziSIXzxRAb8akbXLtjjHvscjaheGumfAC7W6/WH+a1wlAge/hwmd4Zes2Uy+yx+Nky5itMB7TtRRoVHkuiYMKQ73OUrsvnGn01pf46eTCOeiAtMkDSgDdkhvnxhdRFyJoEwYCK4IskG+PQIuE4OPXW+y2lWWXKC6q8YQQeexk95hHXPgXkumBSkR+Cx7QBMDhjpphNRT8msSNzgXEUPpzbq8GnLlt39cDWBhMdnF43l3WH7lxzw5WRIaUQGQdYcd8iIw31+3DxaO5TJtwjQjtW+PMN5YQ6vm5qyEsp2LuootUEVM3A2YhYUcr5HZE7ozvEe/0tf3rN32q96xZJ8MJ8542QZazNf0HdnvULb2u33gO0BmDx2FKK5MjiCBwvtwHiRy9JTlrpzGOmhcoWRHxfKb9AD6Dujll4mWtbaNnaJCl+ihm2fi2zbna9LkItdbYhUN7y7i0ewN0WDNPMzV4tpirIXPhIybERQ+lVyEyh/LE2f7cw55EaAn03c4OXJ//lOw+1GY7C1+Gh/AFVNjsxWrhvU1EEKGb98hriznNWV8vFaOXftS2V/krpe3WGOvzQikclfyJb1qb0CvaJRSJuH59hySWQPLunk/co8U/JOR4Kyf6RF/sDUSMDZHxMYQyPnKFQ5ngDHgqc8/tsZ1iqwFIEludPKeX2Y6lZpPAQWb9diVJKgKSpYHhXIzzwJ2xSliO4iPwIUjYpRooYXiDYM7k6SSrym8V995CphJdsqlNue9K/Z12Y8QE5OUbzLvNjN3f4FGxfH+OaV6POzywk7egv+iO3m/phUBJi/02fLKHxZwWbYf03+ytwBvGYZQHuZGf6mSEY/XkQ8Z1NhjPP0jCbbZaAjAYKW1YT7lxGBZQV15o/knZ6xS1/KUeLQRqiSO2huIMPUssEgjUUryze8VwCzGoh4ZKreZwHFS8q8j+PxkycPeEX+paJtlEp7JrTOwi336QrbRiz1GdkdRU5H/51oCpT2vGg8dTHLSY3KPLv+UQcxvanPwK+aHybzLAffFIzfHoCqR5M85wmxt1xm8Rkp/CSfrLLh7wWSqjBKYE0mLbBMtEDPZJcgi5GINw4xfbjSAzzCdkCg1hd1E1QY1OfZ0yhtcUaTSPlwrC0RT2zeoO8wMVGHGeJqSX5JqZXS6XuCoFXRw78AeHkbItVjnk1GuVqvHY8Hr+RE572xOi1HFemTtAoEZqhGhnsSHxTDl9rOZY6hoyi198kdi6zrhr4LiwGXnDPmHkcBk53/bldjFR4weoI5uuKe17UuL4kFxocgnYBls7hcBAFnSdT//Gj3qWB3BGEZJ+AvcmSQoVYmG2/rnIUoM2HSIN7Lv20Rrka9hAkj0G+haEaZqSHrDsNaS629Yy3mFxTTEaFG276OKHSfV8mW2VsE+nq0c3NFOvbqWq8YcdGVHiL5PVWkE/fPcQ1QyWrHt3DpiCbCIz7HOd2PPPdFl3vMfxh5P1zcSctRCd+PDp6bKplYocw16xlGBPf1BjqqF8XUFc5uzO3+iqSlXKoBVXfkTh5QbJn4j9ZG6/CNg3x65yMm+mWldYS1zt0gcZjEyRkd8GIBh/5N41PyNoBlLtmQiE77TvEkwhdMOCEXI8k8LJgcNk5Xo+crOAfT9ZJ0fRG0BulZ/C97KuPt1sFXe2S6j3Eum+TkHj9Y+FIwDMTpGp7HU8wvBCbamx6yAoIF5E5UglVtXvdqazI6BUpjN7ig99WmduxZcZMmplYW4JsrtdYbTbmT0sde11YDpITzZgINsuHi1QkCSVBtQ6m+jaaK0RW0AR5DwgK9ST/1cg5gcGtNOFW1n51Yu3Jej4+LZxk28cNWmsx9EK4b3VELerQ6nN6uPzpSSMysbX2U4Io7u8twXFZz/7iw1dfsV5Eisergl+fcoda+utFNlrFfk3wc5GJJCDtX8sWcwyTAH76f2f3V/WBG+so4zGW9TgbshjwfXMEavladgv27p/cLSaVlE50Plns8/tjJ2IHniAkdyVfZGEDox58V6BBsaO7+sIG90PxsqhmUXJb+ZULiPf1FCaduKKD5sSv/j9U1TH6mAG39TFBv87zdkg5Ajb7bA4WlrxxxRVc0eEcmyjMfQwS2YAUAMF3AXa+BxJLM2jNSTniX0DEEB3AXV97tJlGLItYLMJTJm9M36zV5tPjAJ7aEQ2cmCFZEoYmhkDgtsWFVSQcDEUuS7/2YPUpwz5h20cMrSTiAdMaZmhEyWK9vybH6RnGIbZx7u0oSq2WFjFc6avHdLponoGKSdR5JSzovy6MX5VO4rJawP/RfTg2wknhtL68BQw0HHAJldVCVbL6dZYXOojGsaJLET6XA983W5oUqhS7jemie3CLR7FV33WBIpZiqHJw2RuYHAdnKjBEUBEbFwzn2CPgJcfpps94cbY4xBUSrQ9rFWzVygbKHa0M56u1CUUQGe5NorCk2Fovaq/iUu6R0LKJUSYFVY/ACYIIT3Cd3a94g3mrq2Ks8+J4VWqVnrvCHXRAmYydAoCdskbOtkTTQWkdixceZCApwModQADGYc8LVsDCq2WCZCsRFKIFn2LfzhoJgdKDVe38bdPgFGDV/weHQz1UbNCo55D4gwSh+ygwkp/MP4eGiXghvYPwh04vq1Cw6QpeVhpa42hZ5peqoQcgC9LXpiSsLqxjfyyuoc624U1fe/2jJQBofaA32KYUAVZlIr4SmT0PYVhOqi5N27zQvLFkoyu0DYQN6cMyf54fREa++CdepIhgmpPe6frio+QnKWjYsea+mb7/Se/3gXJIStKBIPRYS9XPU77PNZwuYcRFMw+ZtGuUlRkkhKcPLjNaCfelNKd96RJPH9NdDvo8x+a/Zym7a1VhL6T2ETDFK+AWuKk7lDMajgS3HR0BepQqgQKvBvFdyVGR3ydp32LgJ0dZOsGZFmYOyg6k2u288qbmnoRyUJWaXkj8JPno6jYj5oKr1GbrqcyKlgsKVpi/jC9MLOrwCzM620veh1pnPLz2Yi+nJzZGLrtJfglCFzsQfhlxd9Cnap9crvIap4BS7aWJRyz7N+WZ6wSgUaw4RD80W3R2dBGkuDkTnoykNztjEtJbOojxFqX7v3lIGP5x18j6an2vUfWPpgWoSRZ+y0ByDSG+cD0M6WV3Jw1/RiDRews7ue7a5J2uaInCuXhessrvOh2PMXlzaHlpkgbBqZrUu37DHIYfPcw2JFjKicel4GLzGamyaKCu8F4bnq2J2FoVKTLSmHxRu2JWzBua5AXlrrlyDWCAuyN/oh1GXj9imSVNalJWWyhDdF+XhTniaPO8tTkq3SAReL4EAgqD9Rh7bJ8U6ETOjyAqpr3UKElTS0jirGlWBJMouSbmq18ZF9Kj0W5CHu/2rwFTPFdDgezb+6bUiyHMblJO2QT0x9niHlXpzzU8xb+EnmZYrYLWWq1EqBWSM2GNGT3oLvMWO3zYZxVAh5JfuXZqQ8ix93jGDT0TG3lTzhQHbuGxqUzbqacGQFzzBDQPj1sZbK/GLY3oy59B+CLew2iQ8pJ5mRF7hKQDfHp3LT4xehRiTSUIUEwbBxt/iNMFYsi+9tj2yGXPXh9RIOGmh54KVPSBVWxg1GkFIQjsS3tGIzU8dbBcJfwptNEfIYhYK2eCU4TLc2w2ENdHagfzeKkhrE93P6Eu7JHOrmH7GlTgF8yvfViX6EABZbxuAvrlqpW/tN2mh6v5FcOT8YdMXjq/5/1bNNd1n5Q9mUK7PRkM7kzAEXYECpzPMN605NZwFW3QUIxIXIMJjfEvu13Sn/cVcu37p9T3RipRD5VWBivmC4pDf0mMeQM3M2hTjv9Lk46L3OLqoNbIew+HspBZXr2Sj1RDOwsn4ZVf6Xu+Fp2SFxR48+Nc8GIQswvgIGN61UEme6yqO01mKXKslK63NjJGhQBeg1EEzs62WhG3B47RGnBZKF42HCbeZ7cpO5JCtn27978ewD8/UPDq4OHEeghdRI5JVsnYt6bVxtgpJxaGK8J0EJc8E4k5tsreeWDe9u4HPgRCn+xAxbLNxT6BgCa0smddw0jbFPYvLIA7bm6sLH6vLUXDxayoGJY25s81XDHfLqaopAOcFprAvSwA37SF3Taa0N/fbq0IfScyIVeB1k4Xmm07jEqJbwEtDPermugXGzaD6pVjxdPR4GHozjL0iGpWqdbyasJBqLWdzNBDHv80JjlKIiuyN/2oiwCq9u/qkL6A+v9MmdiLZsKtKpqChWcQS115PhH5cmTcUf9/aKM6zLTvjdusD/EXUU6aIh0+RgUEx/eVqFqEUXekdwq5d1lNO2qECuwHmdLTdsExfj3E6Xo9IcJVHqylIbaxWATMBDRVjFl0W8pT8SjWVJ8gdqEih36Zi52LXcEE/FhVpDJ6YtHmJc926ZAdZwNzHEWA725Dbr1BzBrI+34WvtwZS+UMa1d01hnxhrIvOq1nDIRn/RPUAFVDrfYAfeYy0XScvwwluzOOSu0iEkwWj1ubEPMpHSnDXLbtgDg/hWTuSeVB3MlFCqo9ZwjfDVSidkGWNbAo4qK3vvewua0tIlqLu9JW+R40Gt/IwkLdnh8WUOeg2fi27tW/kEUpH33GnyhPRSjpgvLIqQkrM8eI3VrFPEJ8QjBlBNsGVnCwevpUxLrUOaA3kBRP4i5vYlA==" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZMIVK_aqZpr-zghEcEbZiT1AyIsIspkYyLVc0l0LeOF4pBOWndimhHHy8Ria-mY4JQ2&amp;t=639190941605538696" type="text/javascript"></script>
+
+
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjax.js" type="text/javascript"></script>
+<script src="../Scripts/WebForms/MsAjax/MicrosoftAjaxWebForms.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C0A976CA" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$MainScriptManager', 'form1', ['tctl00$upShowMsg','upShowMsg'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+
+        <nav class="navbar navbar-top sticky-top navbar-expand-lg p-0 " style="display:none" >
+            <div class="row mx-auto w-100">
+                <div class="col-sm-12">
+                    <div class="container-fluid px-0 top-nav-height">
+                        <ul class="list-code px-0">
+                            <li class="nav-item border-left desktop-view">
+                                <a class="nav-link" href="#topdiv">Skip to main content</a>
+                            </li>
+                        </ul>
+                        <ul class="list-code px-0 ml-auto">
+                            <li class="nav-item border-left" title="Screen Reader Access">
+                                <a class="nav-link" href="../Gigw/frmScreenreader.aspx">
+                                    <em class="fa fa-volume-up"></em>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown social" title="Accessiblility Dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <em class="fas fa-font"></em>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="display: none;">
+                                    <a class="dropdown-item" href="#" title="Decrease font size" id="zoom-out">A-</a>
+                                    <a class="dropdown-item" href="#" title="Reset font size" id="zoom">A</a>
+                                    <a class="dropdown-item" href="#" title="Increase font size" id="zoom-in">A+</a>
+                                </div>
+                            </li>
+                            <li class="nav-item" title="Contrast">
+                                <a class="nav-link" href="#" id="contrast1"><em class="fa fa-adjust"></em></a>
+                                <a class="nav-link" href="#" id="contrast2" style="display: none;"><em class="fa fa-adjust fa-flip-horizontal"></em></a>
+                            </li>
+                         
+                            <li class="nav-item" title="Sitemap">
+                                <a class="nav-link" href="../Gigw/frmSitemap.aspx"><em class="fas fa-sitemap"></em></a>
+                            </li>
+                                                      
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+       
+          <nav class="sb-topnav navbar sticky-top navbar-expand navbar-dark bg-white py-md-1 py-0">
+            <div class="container-fluid">
+                <div class="row w-100 mx-auto">
+                    <div class="col-12">
+                        <div class="d-flex flex-column flex-sm-row">
+                            <div class="d-flex">
+                                <div class=" pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img alt="Logo" src="../Images/satyamevjayte.png" class="logo-satyamevjayte img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3 pl-3">
+                                        <img alt="Logo" src="../Images/WebsiteLogo.png" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="text-left headname">
+                                    <div class="text-first pt-2">GOVERNMENT OF MAHARASHTRA </div>
+                                    <div class="text-second">State Common Entrance Test Cell</div>
+                                   <p><span>First Year Under Graduate Technical Courses in Engineering and Technology (4 Years) &<br /> Master of Engineering and Technology (Integrated 5 Years) Admissions A.Y. 2026-27</span></p>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                       <img src="../Images/ARAFINAL.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                                <div class="pr-3">
+                                    <div class="logo-sm pt-3">
+                                        <img src="../Images/SealofMaharashtra.png" alt="logo" class="logo-img img-fluid" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ml-auto d-flex align-items-center">
+                                <div class="d-none d-sm-inline-block pr-3" style="width: 350px;">
+                                    
+<div class=" d-inline mb-responsive-help" style="font-size: 14px; color: #0e3f8a; font-family: Verdana; line-height: 23px;">
+    Technical Helpline Number
+    <br />
+    (10:00 AM to 06:00 PM)
+                        <br />
+    <img src="../Images/baseline_call_black_18dp.png" style="width: 17px; vertical-align: middle;" />
+    +91-9175108612, 18002098851
+                            <br />
+     
+    
+    
+   
+</div>
+
+                                </div>
+                                <div class="float-right d-sm-inline d-lg-none toggle-btn">
+                                    <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#"><i class="fas fa-bars"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-menu">
+                        <div class="sb-sidenav-menu">
+                            <div class="nav">
+                                <div id="left1" class="left-area">
+                                    <div id="LeftMenu" class="ExpanderMenu">
+	<div class="Style1"   id="MenuGroup_84"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G84">Login Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_1" class="FirstLink"><a href="../StaticPages/HomePage?did=475"><lang key="D475">Home</lang></a></div><div id="MenuLink_9837" class="Link"><a href="https://maha-ara.org/"><lang key="D82566">ARA Home</lang></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_15"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G15">Important Links</lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9875" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_ACAP.pdf"><lang key="D82606">Vacant Seats after CAP IV (ACAP)</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div><div id="MenuLink_1342" class="Link"><a href="../StaticPages/frmInstituteWiseAllotmentList.aspx?did=2021"><lang key="D2021">Institute Wise Allotment List</lang></a></div><div id="MenuLink_1104" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound4.aspx?did=82550"><lang key="D82550">Check Provisional Allotment Status (CAP Round-IV)</lang></a></div><div id="MenuLink_9873" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_AI_CutOff.pdf"><lang key="D82604">CAP Round IV AI Cut Off</lang></a></div><div id="MenuLink_9872" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_MH_CutOff.pdf"><lang key="D82603">CAP Round IV MH Cut Off</lang></a></div><div id="MenuLink_9874" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP4_Diploma_CutOff.pdf"><lang key="D82605">Diploma Cut off CAP Round IV</lang></a></div><div id="MenuLink_9870" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP4.pdf"><lang key="D82601">Provisional Vacancy Position for CAP Round-IV </lang></a></div><div id="MenuLink_9869" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_MH_CutOff.pdf"><lang key="D82600">CAP Round III MH Cut Off </lang></a></div><div id="MenuLink_9868" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP3_AI_CutOff.pdf"><lang key="D82599">CAP Round III AI Cut Off</lang></a></div><div id="MenuLink_1062" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound3.aspx?did=1948"><lang key="D1948">Check Provisional Allotment Status (CAP Round-III)</lang></a></div><div id="MenuLink_9866" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3.pdf"><lang key="D82597">Provisional Vacancy Position for CAP Round-III</lang></a></div><div id="MenuLink_9867" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP3_NewInstitute_CourtOder.pdf"><lang key="D82598">Provisional Vacancy Position for New Institute as per Court Order in CAP Round-III</lang></a></div><div id="MenuLink_817" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound2.aspx?did=1292"><lang key="D1292">Check Provisional Allotment Status (CAP Round-II)</lang></a></div><div id="MenuLink_9858" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_Vacancy_For_CAP2.pdf"><lang key="D82589">Provisional Vacancy Position for CAP Round-II</lang></a></div><div id="MenuLink_9862" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_AI_CutOff.pdf"><lang key="D82593">CAP Round II AI Cut Off</lang></a></div><div id="MenuLink_9863" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP2_MH_CutOff.pdf"><lang key="D82594">CAP Round II MH Cut Off</lang></a></div><div id="MenuLink_794" class="Link"><a href="../StaticPages/frmCheckAllotmentStatusCAPRound1.aspx?did=1250"><lang key="D1250">Check Provisional Allotment Status (CAP Round-I)</lang></a></div><div id="MenuLink_9857" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_MH_CutOff_V1.pdf"><lang key="D82588">CAP Round I MH CutOff</lang></a></div><div id="MenuLink_9856" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026ENGG_CAP1_AI_CutOff.pdf"><lang key="D82587">CAP Round I AI Cutoff</lang></a></div><div id="MenuLink_9852" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/2026_fe_seatmatrix_V1.pdf"><lang key="D82583">Institute-wise Category-wise Seats (Seat Matrix) for CAP Round-I</lang></a></div><div id="MenuLink_739" class="Link"><a href="../StaticPages/frmCheckFinalMeritStatus.aspx?did=1168&Flag="""><lang key="D1168">Check Final Merit List Status </lang></a></div><div id="MenuLink_737" class="Link"><a href="../StaticPages/frmCheckProvisionalMeritStatus.aspx?did=1166&Flag="""><lang key="D1166">Check Provisional Merit List Status</lang></a></div><div id="MenuLink_1222" class="Link"><a href="../StaticPages/frmInstituteList.aspx?did=1884"><lang key="D1884">List of the Colleges with Intake Capacity</lang></a></div><div id="MenuLink_7647" class="Link"><a href="../StaticPages/frmInstituteList_BATU.aspx?did=62354"><lang key="D62354">List of Institutes Affiliated to Dr. BATU, Lonere</lang></a></div><div id="MenuLink_7641" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/44.pdf?did=62341"><lang key="D62341">Registration Manual (Eng)</lang></a></div><div id="MenuLink_7640" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/notices/45.pdf?did=62340"><lang key="D62340">Registration Manual (Mar)</lang></a></div><div id="MenuLink_9853" class="Link"><a href="https://youtu.be/pnFkeS4Gw3s"><lang key="D82584">UM-Option Form Video</lang></a></div><div id="MenuLink_655" class="Link"><a href="../StaticPages/frmApplicationFacilitationCenters.aspx?did=1038"><lang key="D1038">Scrutiny Center List</lang></a></div><div id="MenuLink_9855" class="Link"><a href="https://ay26-27.mahafraportal.org/ssi_prp_25/outer.php?q=fee_search_report"><lang key="D82586">Fee Approved by Fees Regulating Authority, Maharashtra for Academic Year 2026-27</lang></a></div><div id="MenuLink_9865" class="Link"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/FE2026_OffCampus_Institutes.pdf"><lang key="D82596">List of Off-Campus Institutes </lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div><div class="Style1"   id="MenuGroup_245"><b class="b1"></b><b class="b2"></b><b class="b3"></b><b class="b4"></b><div class="MenuHead"><span><lang key="G245">Rules and Brochure </lang>&nbsp;&nbsp;&nbsp;&nbsp;</span></div><div class="MenuLinks"><div class="LinkBox" style="display:inline;"><div id="MenuLink_9805" class="FirstLink"><a href="https://cappublicdocs2026.blob.core.windows.net/documents/PublicPages/Information_Brochure_UG_PG_2026_27_dt_2_7_2026_DHG_1_Display.pdf"><lang key="D82533">Information Brochure for Academic Year 2026-27</lang> <img src="../SynthesysModules_Files/Images/new.gif" alt="NEW" border="0" /></a></div></div></div><b class="b5"></b><b class="b6"></b><b class="b7"></b><b class="b8"></b></div>
+</div><script language="javascript" type="text/javascript">Synthesys.ExpanderMenu.RegisterMenu('LeftMenu', []);Synthesys.ExpanderMenu.ProjectName='FE2026';Synthesys.ExpanderMenu.SlideDelay=5;Synthesys.ExpanderMenu.SlidePixel=5;Synthesys.ExpanderMenu.DoFading=false;</script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="layoutSidenav_content">
+                <main>
+                    <div id="topdiv" class="menu-midbg">
+                        <div id="menu">
+                            <div id="top-menu-index">
+                                <div id="TopMenu" class="TopMenu">
+	<div id="horizontal-menu"><ul><li><a href="../StaticPages/HomePage.aspx?tms=27" id="TopMenuLink_27" leftmenus="15,84,245,255,"><lang key="T27">Home</lang></a></li><li><a href="../StaticPages/frmImportantDates.aspx?tms=33" id="TopMenuLink_33" leftmenus=""><lang key="T33">Important Dates</lang></a></li><li><a href="../StaticPages/frmNotifications.aspx?tms=61" id="TopMenuLink_61" leftmenus=""><lang key="T61">Notifications</lang></a></li><li><a href="../StaticPages/frmNews.aspx?tms=67" id="TopMenuLink_67" leftmenus=""><lang key="T67">News</lang></a></li><li><a href="../StaticPages/frmDownloads.aspx?tms=62" id="TopMenuLink_62" leftmenus=""><lang key="T62">Downloads</lang></a></li><li><a href="../StaticPages/frmContactUs.aspx?tms=63" id="TopMenuLink_63" leftmenus=""><lang key="T63">Contact Us</lang></a></li></ul></div>
+</div><script language="javascript" type="text/javascript">Synthesys.TopMenu.RegisterMenu('TopMenu');Synthesys.TopMenu.TopMenuFirstLinkId=27;Synthesys.TopMenu.SetSelected('27');</script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+                    <div id="rightContainer1" class="inner_rightarea">
+                        <span id="upShowMsg">
+                                <span id="ShowMsg" class="ShowMessage"></span>
+                            </span>
+                        
+    <div id="rightContainer_ContentBox1" class="ContentBox">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Institute Summary</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv">
+			
+        <table class="AppFormTable">
+            <tr>
+                <td align="right">Institute Code</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteCode" style="font-weight:bold;">05177</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Name</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteName" style="font-weight:bold;">Matoshri College of Engineering and Research Centre, Eklahare, Nashik</span></td>
+            </tr>
+            <tr>
+                <td align="right">Institute Address</td>
+                <td colspan="3"><span id="rightContainer_ContentBox1_lblInstituteAddress" style="font-weight:bold;">At Post Eklahare, Taluka & District Nashik</span></td>
+            </tr>
+            <tr>
+                <td align="right">Region</td>
+                <td><span id="rightContainer_ContentBox1_lblRegion" style="font-weight:bold;">Nashik</span></td>
+                <td align="right">District</td>
+                <td><span id="rightContainer_ContentBox1_lblDistrict" style="font-weight:bold;">Nashik</span></td>
+            </tr>
+            <tr>
+                <td style ="width:25%" align="right">Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus1" style="font-weight:bold;">Un-Aided</span></td>
+                <td style ="width:25%" align="right">Autonomy Status</td>
+                <td style ="width:25%"><span id="rightContainer_ContentBox1_lblStatus2" style="font-weight:bold;">Autonomous</span></td>
+            </tr>
+            <tr>
+                <td align="right">Minority Status</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblStatus3" style="font-weight:bold;">Non-Minority</span></td>
+            </tr>
+            <tr>
+                <td align="right">Public Remark</td>
+                <td colspan = "3"><span id="rightContainer_ContentBox1_lblPublicRemark" style="font-weight:bold;"></span></td>
+            </tr>
+        </table>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script type="text/javascript" language="javascript" src="../SynthesysModules_Files/Scripts/ContentBox.js"></script><script language="javascript" type="text/javascript">var rightContainer_ContentBox1= document.getElementById('rightContainer_ContentBox1');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox1,false,false,false,false);</script>
+    <div id="rightContainer_ContentBox7" class="ContentBox" style="width:100%;">
+	<b class="b1" ></b><b class="b2" ></b><b class="b3" ></b><b class="b4" ></b><div class="HeadDiv">
+		<span>Course Details</span>
+	</div><div class="BodyDiv">
+		<div class="InnerBodyDiv" style="overflow:auto;">
+			
+        <div>
+				<table class="DataGrid" cellspacing="0" cellpadding="5" rules="all" border="1" id="rightContainer_ContentBox7_gvChoiceCodeList" style="width:100%;border-collapse:collapse;">
+					<tr>
+						<th class="Header" align="center" scope="col" style="white-space:nowrap;">Choice Code</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Course Name</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">University</th><th class="Header" align="center" scope="col">Status</th><th class="Header" align="center" scope="col">Autonomy Status</th><th class="Header" align="center" scope="col">Minority Status</th><th class="Header" align="center" scope="col">Shift</th><th class="Header" align="center" scope="col" style="white-space:nowrap;">Accreditation</th><th class="Header" align="center" scope="col">Gender</th><th class="Header" align="center" scope="col">Total Intake</th>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517719110</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517719111T</td><td class="Item" align="center" style="white-space:nowrap;">Civil Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517724510</td><td class="Item" align="center" style="white-space:nowrap;">Computer Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">180</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517724511T</td><td class="Item" align="center" style="white-space:nowrap;">Computer Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">9</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517724610</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517724611T</td><td class="Item" align="center" style="white-space:nowrap;">Information Technology</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517729310</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">60</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517729311T</td><td class="Item" align="center" style="white-space:nowrap;">Electrical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">3</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517737210</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517737211T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Telecommunication Engg</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517761210</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517761211T</td><td class="Item" align="center" style="white-space:nowrap;">Mechanical Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517784410</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Computer Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517784411T</td><td class="Item" align="center" style="white-space:nowrap;">Electronics and Computer Engineering</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517799510</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence and Data Science</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">120</td>
+					</tr><tr>
+						<td class="Item" align="center" style="white-space:nowrap;">0517799511T</td><td class="Item" align="center" style="white-space:nowrap;">Artificial Intelligence and Data Science</td><td class="Item" align="center" style="white-space:nowrap;">Savitribai Phule Pune University</td><td class="Item" align="center" style="white-space:nowrap;">Un-Aided</td><td class="Item" align="center" style="white-space:nowrap;">Autonomous</td><td class="Item" align="center" style="white-space:nowrap;">Non-Minority</td><td class="Item" align="center" style="white-space:nowrap;">General Shift</td><td class="Item" align="center" style="white-space:nowrap;">-</td><td class="Item" align="center" style="white-space:nowrap;">Co-Education</td><td class="Item" align="center" style="white-space:nowrap;">6</td>
+					</tr>
+				</table>
+			</div>
+    
+		</div>
+	</div><b class="b5" ></b><b class="b6" ></b><b class="b7" ></b><b class="b8" ></b>
+</div><script language="javascript" type="text/javascript">var rightContainer_ContentBox7= document.getElementById('rightContainer_ContentBox7');Synthesys.ContentBox.PrepareObject(rightContainer_ContentBox7,false,false,false,false);</script>
+
+                    </div>
+                </main>
+               
+                
+                
+<div id="footer1" class="bottombg">
+    <div class="bottom-link">
+      
+        
+        <font size="4" class="footer-head pb-3">Office Address</font>
+
+        <br />
+       <br />
+        <font size="3" class="footer-text p-3">8th Floor, New Excelsior Building, A.K.Nayak Marg, Fort, Mumbai-400001. (M.S.)</font>
+    
+        
+    </div>
+      <div class="p-3" style="border-top:1px solid grey ">
+        <div class="site-info">
+            <p style="font-size: 12px;color:grey">Copyright © State CET Cell,Maharashtra State, Mumbai. All rights reserved.(W2), 2026.</p>
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </form> 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.2/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script><!-- VAPT #20 (CWE-1104): upgraded Bootstrap 4.5.0 (EOL/vulnerable) to 4.6.2 and moved from discontinued StackPath CDN to cdnjs -->
+    <script src="../SBAdmin/dist/js/scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+    
+  
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    
+    
+    
+
+    
+    <script>
+
+        // JavaScript source code
+        if (typeof (localStorage) == 'undefined') {
+            alert('Your browser does not support HTML5 localStorage. Try upgrading.');
+        } else {
+            if (localStorage.getItem("background") != null) {
+                $("#contrast1").hide();
+                $("#contrast2").show();
+                getColour = localStorage.background;
+                $('body').css('background', getColour);
+                $('div,footer,nav,a,.ul-title,td,.InputButton,.Header,.panel-head').css('background', getColour);
+                $('p,span,a,td,div,footer,.InputButton,.Header,.panel-head,.firstLine').css('color', 'yellow');
+                $('.info-section,.info-section div,a.carousel-caption').css('background', '');
+                $('.info-section, .info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+                $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+                $('.ttl').css('border', '1px solid red');
+                $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+            }
+            else {
+                $("#contrast2").hide();
+                $("#contrast1").show();
+            }
+        }
+
+
+        $("#contrast1").click(function () {
+            location.reload();
+            setColour = "black";
+
+
+            /*to more test color can change and retest*/
+            if (setColour == "") {
+                alert('You never entered anything silly!');
+                return;
+            }
+            localStorage.setItem("background", setColour);
+            localStorage.setItem("color", settextColor);
+            getColour = localStorage.background;
+
+            $('body').css('background', getColour);
+            $('div,footer,nav,a,.ul-title,td').css('background', getColour);
+            $('p,span,a,td,div,footer,.fa').css('color', 'yellow');
+            $('.info-section,.info-section div,a,.carousel-caption').css('background', '');
+            $('.info-section,.info-section p,h1,h2,h3,h4,h5,h6,.ul-title').css('color', 'white');
+            $('nav').css('border-bottom', '1px solid rgba(255,255,255,0.6)');
+
+            $('.ttl').css('border', '1px solid red');
+            $('.ul-title').css('border', '1px solid rgba(255,255,255,0.6)');
+        });
+        $(document).ready(function () {
+            $("#contrast2").click(function () {
+                location.reload();
+                localStorage.removeItem('background');
+            });
+        });
+
+
+        $('.hide').hide();
+        $('#hidebutton').hide();
+        $('#showbutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').hide();
+            $('#hidebutton').show();
+        });
+
+        $('#hidebutton').click(function () {
+            $('.hide').toggle();
+            $('#showbutton').show();
+            $('#hidebutton').hide();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('open');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('open');
+            });
+
+        $('.right-panel #sidebar').hide();
+        $(document).ready(function () {
+            $('.right-panel #sidebar').hide();
+            $('#sidebarCollapse').on('click', function () {
+                $('.right-panel #sidebar').toggle();
+
+            });
+
+        });
+
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        var isPresent = document.getElementById('photo-gallery');
+        if (isPresent > 0) {
+            showSlides(slideIndex);
+        }
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+        }
+
+        $(document).ready(function () {
+            var allElement = $('h1,h2,h3,h4,h5,h6,p,a,span, .table td, .table th, li, i, em');
+            console.log(allElement);
+            let originalArray = [];
+
+            for (var i = 0; i < allElement.length; i++) {
+                var originalSize = $(allElement[i]).css('font-size');
+                originalArray.push(originalSize);
+            }
+
+
+            var localArray = localStorage.getItem('fonts');
+            if (localStorage.getItem("fonts") != null) {
+
+                var floatArray = [];
+                let pasreValue;
+
+                pasreValue = JSON.parse(localArray);
+                var floatValue;
+                for (var x = 0; x < pasreValue.length; x++) {
+                    floatValue = parseFloat(pasreValue[x]);
+
+                    floatArray.push(floatValue);
+
+                }
+                console.log(floatArray);
+
+                for (var i = 0; i < allElement.length; i++) {
+                    $(allElement[i]).css('font-size', floatArray[i] + 'px');
+
+                }
+
+            }
+
+            // Increase Font Size  
+
+            var count = 0;
+
+            $("#zoom-in").one('click', function () {
+                count = localStorage.getItem('count');
+
+                if (count <= 0) {
+
+                    count++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) + 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+
+
+                        ////alert(parseFloat(originalSize) + 2);
+                        //console.log($(allElement[i]));
+                        //console.log($(allElement[i]) + " /" +originalSize + " /" + increaseSize);
+
+
+                    }
+
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count', count);
+                }
+            });
+
+            // Decrease Font Size 
+
+
+            let namesArr = [];
+            var count1 = 0;
+            $("#zoom-out").one('click', function () {
+                count1 = localStorage.getItem('count1');
+
+                if (count1 <= 0) {
+                    count1++;
+                    for (var i = 0; i < allElement.length; i++) {
+
+                        originalSize = $(allElement[i]).css('font-size');
+
+                        var increaseSize = parseFloat(originalSize) - 2 + 'px';
+
+                        $(allElement[i]).css('font-size', increaseSize);
+
+                        namesArr.push(increaseSize);
+                    }
+                    //console.log(namesArr);
+
+                    localStorage.setItem('fonts', JSON.stringify(namesArr));
+                    localStorage.setItem('count1', count1);
+                }
+            });
+
+            // reset Font Size
+
+
+            $("#zoom").one('click', function () {
+                location.reload();
+                localStorage.removeItem('fonts');
+                localStorage.removeItem('count');
+                localStorage.removeItem('count1');
+            });
+
+
+        });
+
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+
+        $('.v-playmarquee').hide();
+        $('.h-playmarquee').hide();
+
+        function calcSpeed() {
+            var liTime = 5;
+
+            var spanSelector = document.querySelectorAll('.marquee');
+            for (var i = 0; i < spanSelector.length; i++) {
+                var marqueeDiv = spanSelector[i];
+
+                marqueeUL = marqueeDiv.children[0];
+
+                marqueeElemts = marqueeUL.childElementCount;
+                //console.log(marqueeElemts);
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    marqueeULHeight = marqueeUL.offsetHeight;
+                    //console.log(marqueeULHeight);
+                    liTime = 4;
+                    var vPlay = document.querySelectorAll('.v-playmarquee');
+
+                    var vPause = document.querySelectorAll('.v-pausemarquee');
+                    vPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "inline-block";
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "paused";
+                        });
+                    });
+                    vPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "inline-block";;
+                            targetUL = event.target.parentElement.nextSibling.nextSibling.children[0];
+                            targetUL.style.animationPlayState = "running";
+                        });
+                    });
+                }
+
+                else if (marqueeUL.classList.contains('marquee-horizontal')) {
+                    marqueeULWidth = marqueeUL.scrollWidth;
+                    console.log(marqueeULWidth);
+                    liTime = 8;
+                    var hPlay = document.querySelectorAll('.h-playmarquee');
+                    var hPause = document.querySelectorAll('.h-pausemarquee');
+                    hPause.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "paused";
+                            event.target.style.display = "none";
+                            event.target.nextSibling.nextSibling.style.display = "block";
+
+                        });
+                    });
+                    hPlay.forEach(function (item) {
+                        item.addEventListener('click', function (event) {
+                            targetUL = event.target.parentElement.previousSibling.previousSibling.children[0];
+                            //console.log(targetUL);
+                            targetUL.style.animationPlayState = "running";
+                            event.target.style.display = "none";
+                            event.target.previousSibling.previousSibling.style.display = "block";
+
+                        });
+                    });
+                }
+                if (marqueeUL.classList.contains('marquee-vertical')) {
+                    var spanTime = marqueeULHeight / 16;
+                }
+                else {
+                    spanTime = marqueeULWidth / 22;
+                    console.log(marqueeULWidth);
+                    console.log(spanTime);
+                }
+
+                //console.log(spanTime);
+                marqueeUL.style.animationDuration = spanTime + "s";
+            }
+        }
+        calcSpeed();
+
+        $('.marquee a').click(function () {
+            window.location.reload();
+        });
+
+        $(".dropdown").hover(
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeIn("fast");
+                $(this).addClass('show');
+            },
+            function () {
+                $('>.dropdown-menu', this).stop(true, true).fadeOut("fast");
+                $(this).removeClass('show');
+            });
+
+        //window.onload = function () {
+        //    (function () {
+        //        var viewportWidth = $(window).width();
+        //        if (viewportWidth < 800) {
+
+        //            var dropdownBtn = document.querySelectorAll('.dropdown-toggle');
+        //            //console.log(dropdownBtn);
+        //            dropdownBtn.forEach(function (btn) {
+        //                btn.addEventListener('click', function (event) {
+        //                    var dropMenu = event.target.nextSibling.nextSibling;
+        //                    if (dropMenu.classList.contains('show')) {
+        //                        dropMenu.style.display = "none";
+        //                    }
+        //                    else {
+        //                        dropMenu.style.display = "block";
+        //                    }
+        //                });
+        //            });
+        //        }
+        //    })();
+        //}
+
+    </script>
+
+     
+</body>
+</html>
